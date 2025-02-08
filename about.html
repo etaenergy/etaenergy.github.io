@@ -829,38 +829,41 @@
             requestAnimationFrame(raf);
     
             // Start Lenis after page load animation
-            lenis.stop();
+            // lenis.stop();
             console.log("⏳ Lenis stopped initially...");
     
             setTimeout(() => {
                 lenis.start();
                 console.log("▶️ Lenis started after delay");
-            }, 4300);
+            }, 100);
     
-            // Handle popups
-            buttonsOpen.forEach(button => {
-                button.addEventListener("click", () => {
-                    console.log("🛑 Popup opened, stopping Lenis...");
-                    body.style.overflow = "hidden";
+            // Handle popup opening
+            // buttonsOpen.forEach(button => {
+            //     button.addEventListener("click", () => {
+            //         console.log("🛑 Popup opened, stopping Lenis...");
+            //         body.style.overflow = "hidden";
     
-                    document.querySelectorAll(".contact_popup, .book-course_popup").forEach(popup => {
-                        popup.style.top = `${window.scrollY}px`;
-                    });
+            //         document.querySelectorAll(".contact_popup, .book-course_popup").forEach(popup => {
+            //             popup.style.top = `${window.scrollY}px`;
+            //         });
     
-                    lenis.stop();
-                });
-            });
+            //         // lenis.stop();
+            //     });
+            // });
     
+            // Handle popup closing
             buttonsClose.forEach(button => {
                 button.addEventListener("click", () => {
                     console.log("✅ Popup closed, restarting Lenis...");
-                    body.style.overflow = "auto";
-    
-                    document.querySelectorAll(".contact_popup, .book-course_popup").forEach(popup => {
-                        popup.style.top = `${window.scrollY}px`;
-                    });
-    
-                    lenis.start();
+                    
+                    // Ensure scrolling is re-enabled
+                    body.style.overflow = "";
+                    
+                    // Ensure Lenis resumes
+                    setTimeout(() => {
+                        lenis.start();
+                        console.log("♻️ Lenis restarted after popup close");
+                    }, 100);
                 });
             });
     
@@ -898,17 +901,20 @@
             if (triggerOpenCTA) {
                 triggerOpenCTA.addEventListener("click", () => {
                     console.log("🛑 CTA opened, stopping Lenis...");
-                    lenis.stop();
+                    // lenis.stop();
                 });
             }
             if (triggerCloseCTA) {
                 triggerCloseCTA.addEventListener("click", () => {
                     console.log("✅ CTA closed, restarting Lenis...");
-                    lenis.start();
+                    setTimeout(() => {
+                        lenis.start();
+                        console.log("♻️ Lenis restarted after CTA close");
+                    }, 100);
                 });
             }
         });
-    </script>
+    </script> 
     <script src="/index.94e9ebb9.js"></script>
     <script src="/about.502f8659.js"></script>
     <script src="/about.27365868.js"></script>
