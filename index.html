@@ -1640,18 +1640,18 @@
         }, 100);
 
         // Handle popup opening
-        buttonsOpen.forEach(button => {
-            button.addEventListener("click", () => {
-                console.log("🛑 Popup opened, stopping Lenis...");
-                body.style.overflow = "hidden";
+        // buttonsOpen.forEach(button => {
+        //     button.addEventListener("click", () => {
+        //         console.log("🛑 Popup opened, stopping Lenis...");
+        //         body.style.overflow = "hidden";
 
-                document.querySelectorAll(".contact_popup, .book-course_popup").forEach(popup => {
-                    popup.style.top = `${window.scrollY}px`;
-                });
+        //         document.querySelectorAll(".contact_popup, .book-course_popup").forEach(popup => {
+        //             popup.style.top = `${window.scrollY}px`;
+        //         });
 
-                // lenis.stop();
-            });
-        });
+        //         // lenis.stop();
+        //     });
+        // });
 
         // Handle popup closing
         buttonsClose.forEach(button => {
@@ -1721,7 +1721,7 @@
 <!-- Load Lenis from CDN -->
 <!-- <script src="https://unpkg.com/@studio-freight/lenis"></script> -->
 
-<script>
+<!-- <script>
     document.addEventListener("DOMContentLoaded", () => {
         console.log("🚀 Lenis script initialized");
 
@@ -1749,7 +1749,7 @@
             body.style.overflow = ""; // Restore scrolling
         });
     });
-</script>
+</script> -->
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
