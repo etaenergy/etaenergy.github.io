@@ -678,7 +678,54 @@
                             </div>
                         </div>
                     </div>
-                    <script>document.addEventListener("DOMContentLoaded", () => { let t = ["experience", "projects", "modernizations", "satisfaction"], e = !1; function n() { e || t.forEach(t => { (function (t) { let e = t.getBoundingClientRect(); return e.top >= 0 && e.left >= 0 && e.bottom <= (window.innerHeight || document.documentElement.clientHeight) && e.right <= (window.innerWidth || document.documentElement.clientWidth) })(document.getElementById(t)) && (!function (t) { let e = document.getElementById(t), n = +e.getAttribute("data-count"), i = n / 50, o = 0, d = () => { (o += i) < n ? (e.innerText = Math.floor(o), requestAnimationFrame(d)) : e.innerText = n }; d() }(t), e = !0) }) } window.addEventListener("scroll", n), n() });</script>
+                    <!-- <script>document.addEventListener("DOMContentLoaded", () => { let t = ["experience", "projects", "modernizations", "satisfaction"], e = !1; function n() { e || t.forEach(t => { (function (t) { let e = t.getBoundingClientRect(); return e.top >= 0 && e.left >= 0 && e.bottom <= (window.innerHeight || document.documentElement.clientHeight) && e.right <= (window.innerWidth || document.documentElement.clientWidth) })(document.getElementById(t)) && (!function (t) { let e = document.getElementById(t), n = +e.getAttribute("data-count"), i = n / 50, o = 0, d = () => { (o += i) < n ? (e.innerText = Math.floor(o), requestAnimationFrame(d)) : e.innerText = n }; d() }(t), e = !0) }) } window.addEventListener("scroll", n), n() });</script> -->
+                    <script>
+                        document.addEventListener("DOMContentLoaded", () => {
+                            let elements = ["experience", "projects", "modernizations", "satisfaction"];
+                            let hasAnimated = false;
+                        
+                            function isInViewport(element) {
+                                let rect = element.getBoundingClientRect();
+                                return (
+                                    rect.top < window.innerHeight - 50 && // Trigger earlier for better mobile experience
+                                    rect.bottom >= 0
+                                );
+                            }
+                        
+                            function animateCount(id) {
+                                let el = document.getElementById(id);
+                                let target = +el.getAttribute("data-count");
+                                let step = target / 50; // Adjust step for smooth counting
+                                let current = 0;
+                        
+                                function updateCounter() {
+                                    current += step;
+                                    if (current < target) {
+                                        el.innerText = Math.floor(current);
+                                        requestAnimationFrame(updateCounter);
+                                    } else {
+                                        el.innerText = target;
+                                    }
+                                }
+                                updateCounter();
+                            }
+                        
+                            function handleScroll() {
+                                if (hasAnimated) return;
+                                let allVisible = elements.every(id => isInViewport(document.getElementById(id)));
+                        
+                                if (allVisible) {
+                                    elements.forEach(animateCount);
+                                    hasAnimated = true;
+                                    window.removeEventListener("scroll", handleScroll);
+                                }
+                            }
+                        
+                            window.addEventListener("scroll", handleScroll);
+                            handleScroll(); // Run on load in case elements are already visible
+                        });
+                        </script>
+                        
                     <div class="smooth-wrapper">
                         <div class="smooth-content">
                             <div class="section_home-testimonials">
@@ -1594,134 +1641,134 @@
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
     <script>new Swiper(".card-swiper", { lazy: !0, allowTouchMove: !0, breakpoints: { 0: { slidesPerView: 1.62, spaceBetween: 20 }, 478: { slidesPerView: 1.62, spaceBetween: 20 }, 767: { slidesPerView: 2, spaceBetween: 20 }, 988: { slidesPerView: 3, spaceBetween: 20 }, 1280: { slidesPerView: 3, spaceBetween: 20 } }, scrollbar: { el: ".swiper-scrollbar", draggable: !0 }, navigation: { nextEl: ".slider-next", prevEl: ".slider-prev" } });</script>
     <!-- Load Lenis from CDN -->
-<script src="https://unpkg.com/@studio-freight/lenis"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis"></script>
 
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        console.log("🚀 Lenis script initialized");
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            console.log("🚀 Lenis script initialized");
 
-        const body = document.body;
-        const buttonsOpen = document.querySelectorAll(".popup-open");
-        const buttonsClose = document.querySelectorAll(".popup-close");
+            const body = document.body;
+            const buttonsOpen = document.querySelectorAll(".popup-open");
+            const buttonsClose = document.querySelectorAll(".popup-close");
 
-        if (typeof Lenis === "undefined") {
-            console.error("❌ Lenis is not loaded! Check the CDN or import.");
-            return;
-        }
+            if (typeof Lenis === "undefined") {
+                console.error("❌ Lenis is not loaded! Check the CDN or import.");
+                return;
+            }
 
-        const lenis = new Lenis({
-            duration: 1.2,
-            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-            direction: "vertical",
-            gestureDirection: "vertical",
-            smooth: true,
-            mouseMultiplier: 1,
-            smoothTouch: false,
-            touchMultiplier: 2,
-            infinite: false,
-        });
-
-        console.log("✅ Lenis initialized:", lenis);
-
-        function raf(time) {
-            lenis.raf(time);
-            requestAnimationFrame(raf);
-        }
-
-        requestAnimationFrame(raf);
-
-        // Start Lenis after page load animation
-        // lenis.stop();
-        console.log("⏳ Lenis stopped initially...");
-
-        setTimeout(() => {
-            lenis.start();
-            console.log("▶️ Lenis started after delay");
-        }, 100);
-
-        // Handle popup opening
-        // buttonsOpen.forEach(button => {
-        //     button.addEventListener("click", () => {
-        //         console.log("🛑 Popup opened, stopping Lenis...");
-        //         body.style.overflow = "hidden";
-
-        //         document.querySelectorAll(".contact_popup, .book-course_popup").forEach(popup => {
-        //             popup.style.top = `${window.scrollY}px`;
-        //         });
-
-        //         // lenis.stop();
-        //     });
-        // });
-
-        // Handle popup closing
-        buttonsClose.forEach(button => {
-            button.addEventListener("click", () => {
-                console.log("✅ Popup closed, restarting Lenis...");
-                
-                // Ensure scrolling is re-enabled
-                body.style.overflow = "";
-                
-                // Ensure Lenis resumes
-                setTimeout(() => {
-                    lenis.start();
-                    console.log("♻️ Lenis restarted after popup close");
-                }, 100);
+            const lenis = new Lenis({
+                duration: 1.2,
+                easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+                direction: "vertical",
+                gestureDirection: "vertical",
+                smooth: true,
+                mouseMultiplier: 1,
+                smoothTouch: false,
+                touchMultiplier: 2,
+                infinite: false,
             });
-        });
 
-        // CTA Popup Handling
-        const triggerOpenCTA = document.getElementById("popup-cta-trigger-open");
-        const triggerCloseCTA = document.getElementById("popup-cta-trigger-close");
+            console.log("✅ Lenis initialized:", lenis);
 
-        function triggerPopup() {
-            let cookie = Cookies.get("popup-cta") === "true";
+            function raf(time) {
+                lenis.raf(time);
+                requestAnimationFrame(raf);
+            }
 
-            if (!cookie) {
-                Cookies.set("popup-cta", "true", { expires: 1 });
-                if (triggerOpenCTA) {
-                    console.log("🔔 Triggering popup...");
-                    triggerOpenCTA.click();
+            requestAnimationFrame(raf);
+
+            // Start Lenis after page load animation
+            // lenis.stop();
+            console.log("⏳ Lenis stopped initially...");
+
+            setTimeout(() => {
+                lenis.start();
+                console.log("▶️ Lenis started after delay");
+            }, 100);
+
+            // Handle popup opening
+            // buttonsOpen.forEach(button => {
+            //     button.addEventListener("click", () => {
+            //         console.log("🛑 Popup opened, stopping Lenis...");
+            //         body.style.overflow = "hidden";
+
+            //         document.querySelectorAll(".contact_popup, .book-course_popup").forEach(popup => {
+            //             popup.style.top = `${window.scrollY}px`;
+            //         });
+
+            //         // lenis.stop();
+            //     });
+            // });
+
+            // Handle popup closing
+            buttonsClose.forEach(button => {
+                button.addEventListener("click", () => {
+                    console.log("✅ Popup closed, restarting Lenis...");
+
+                    // Ensure scrolling is re-enabled
+                    body.style.overflow = "";
+
+                    // Ensure Lenis resumes
+                    setTimeout(() => {
+                        lenis.start();
+                        console.log("♻️ Lenis restarted after popup close");
+                    }, 100);
+                });
+            });
+
+            // CTA Popup Handling
+            const triggerOpenCTA = document.getElementById("popup-cta-trigger-open");
+            const triggerCloseCTA = document.getElementById("popup-cta-trigger-close");
+
+            function triggerPopup() {
+                let cookie = Cookies.get("popup-cta") === "true";
+
+                if (!cookie) {
+                    Cookies.set("popup-cta", "true", { expires: 1 });
+                    if (triggerOpenCTA) {
+                        console.log("🔔 Triggering popup...");
+                        triggerOpenCTA.click();
+                    }
                 }
             }
-        }
 
-        const minutes = 3 * 60 * 1000;
-        const popupTriggerTime = Cookies.get("popupCTATriggerTime");
+            const minutes = 3 * 60 * 1000;
+            const popupTriggerTime = Cookies.get("popupCTATriggerTime");
 
-        if (popupTriggerTime) {
-            const timeNow = Date.now();
-            const timestampDifference = parseInt(popupTriggerTime) - timeNow;
-            console.log(`🕒 CTA popup delay: ${Math.max(timestampDifference, 0)}ms`);
-            setTimeout(triggerPopup, Math.max(timestampDifference, 0));
-        } else {
-            const timeToTrigger = Date.now() + minutes;
-            Cookies.set("popupCTATriggerTime", timeToTrigger);
-            setTimeout(triggerPopup, minutes);
-        }
+            if (popupTriggerTime) {
+                const timeNow = Date.now();
+                const timestampDifference = parseInt(popupTriggerTime) - timeNow;
+                console.log(`🕒 CTA popup delay: ${Math.max(timestampDifference, 0)}ms`);
+                setTimeout(triggerPopup, Math.max(timestampDifference, 0));
+            } else {
+                const timeToTrigger = Date.now() + minutes;
+                Cookies.set("popupCTATriggerTime", timeToTrigger);
+                setTimeout(triggerPopup, minutes);
+            }
 
-        // Stop Lenis when CTA is opened, restart when closed
-        if (triggerOpenCTA) {
-            triggerOpenCTA.addEventListener("click", () => {
-                console.log("🛑 CTA opened, stopping Lenis...");
-                // lenis.stop();
-            });
-        }
-        if (triggerCloseCTA) {
-            triggerCloseCTA.addEventListener("click", () => {
-                console.log("✅ CTA closed, restarting Lenis...");
-                setTimeout(() => {
-                    lenis.start();
-                    console.log("♻️ Lenis restarted after CTA close");
-                }, 100);
-            });
-        }
-    });
-</script> 
+            // Stop Lenis when CTA is opened, restart when closed
+            if (triggerOpenCTA) {
+                triggerOpenCTA.addEventListener("click", () => {
+                    console.log("🛑 CTA opened, stopping Lenis...");
+                    // lenis.stop();
+                });
+            }
+            if (triggerCloseCTA) {
+                triggerCloseCTA.addEventListener("click", () => {
+                    console.log("✅ CTA closed, restarting Lenis...");
+                    setTimeout(() => {
+                        lenis.start();
+                        console.log("♻️ Lenis restarted after CTA close");
+                    }, 100);
+                });
+            }
+        });
+    </script>
 
-<!-- Load Lenis from CDN -->
-<!-- <script src="https://unpkg.com/@studio-freight/lenis"></script> -->
+    <!-- Load Lenis from CDN -->
+    <!-- <script src="https://unpkg.com/@studio-freight/lenis"></script> -->
 
-<!-- <script>
+    <!-- <script>
     document.addEventListener("DOMContentLoaded", () => {
         console.log("🚀 Lenis script initialized");
 
