@@ -1,0 +1,1 @@
+console.log("script.js loaded"),$(document).ready(function(){console.log("script.js loaded"),$(".toggle-button").click(function(){let o=$(this).data("section-id");console.log("toggleServiceSection called with sectionId:",o);let e=$("#"+o);e.length?e.toggle():console.error("Section not found:",o)})});
