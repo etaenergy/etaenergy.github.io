@@ -1,1 +1,0 @@
-$.getJSON("../config.json",function(e){e.secret_key});
