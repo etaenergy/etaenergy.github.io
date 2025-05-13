@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){console.log("Back button script loaded");let t=document.querySelector("[data-back-btn]");console.log("Back button found:",t),t&&t.addEventListener("click",function(t){t.preventDefault(),document.body.classList.add("fade-out"),setTimeout(()=>{history.back()},500)})});
