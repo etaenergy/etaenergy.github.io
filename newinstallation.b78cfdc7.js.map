@@ -1,0 +1,1 @@
+{"mappings":";AAAA,IAAI,+BAAS,KAAK,QAAQ,CAAC;IAAE,UAAU;QAAE,UAAU;IAAE;AAAE;AAEvD,6BAAO,EAAE,CAAC,QAAQ;IAAE,SAAQ;IAAG,MAAM;AAAmB","sources":["index1.js"],"sourcesContent":["var tmlpas = gsap.timeline({ defaults: { duration: 1 } });\r\n\r\ntmlpas.to(\"body\", { opacity:1, ease: \"Power1.easeInOut\" });"],"names":[],"version":3,"file":"newinstallation.b78cfdc7.js.map"}
