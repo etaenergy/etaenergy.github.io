@@ -284,6 +284,10 @@ img, video {
   pointer-events: none;
 }
 
+.visible {
+  visibility: visible;
+}
+
 .fixed {
   position: fixed;
 }
@@ -14182,4 +14186,4 @@ button[type="button"]:hover {
     background-image: conic-gradient(from 180deg, #ff6a6a, #c33, #600);
   }
 }
-/*# sourceMappingURL=index.424f614a.css.map */
+/*# sourceMappingURL=index.80182eb9.css.map */
