@@ -66,5 +66,25 @@ document.addEventListener("DOMContentLoaded", ()=>{
         }, 500); // Match this with your fade animation duration
     });
 });
+window.addEventListener("pageshow", ()=>{
+    document.body.classList.remove("fade-out");
+});
+window.addEventListener("load", ()=>{
+    document.body.classList.remove("fade-out");
+});
+document.addEventListener("DOMContentLoaded", ()=>{
+    // Scroll to anchor after page is visible
+    const scrollToAnchorIfPresent = ()=>{
+        const hash = window.location.hash;
+        if (hash) {
+            const target = document.querySelector(hash);
+            if (target) target.scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+    };
+    // Run after fade-in is done
+    setTimeout(scrollToAnchorIfPresent, 500); // match this to your CSS fade timing
+});
 
-//# sourceMappingURL=newinstallation.197b6e90.js.map
+//# sourceMappingURL=newinstallation.f0d8ecc0.js.map
