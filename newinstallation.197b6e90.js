@@ -53,5 +53,18 @@ document.addEventListener("DOMContentLoaded", function() {
         burger.classList.toggle("active");
     });
 });
+document.addEventListener("DOMContentLoaded", ()=>{
+    // Wait until page has fully loaded
+    window.addEventListener("load", ()=>{
+        const hash = window.location.hash;
+        if (hash) // Use timeout to wait for fade-in to complete
+        setTimeout(()=>{
+            const target = document.querySelector(hash);
+            if (target) target.scrollIntoView({
+                behavior: "smooth"
+            });
+        }, 500); // Match this with your fade animation duration
+    });
+});
 
-//# sourceMappingURL=newinstallation.301b5088.js.map
+//# sourceMappingURL=newinstallation.197b6e90.js.map
