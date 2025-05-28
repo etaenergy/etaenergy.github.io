@@ -16,22 +16,28 @@ document.addEventListener("DOMContentLoaded", function() {
     console.log("Back button script loaded");
     const backBtn = document.querySelector("[data-back-btn]");
     console.log("Back button found:", backBtn);
-    if (backBtn) backBtn.addEventListener("click", function(event) {
-        event.preventDefault();
+    if (backBtn) backBtn.addEventListener("click", function(event1) {
+        event1.preventDefault();
         document.body.classList.add("fade-out");
         setTimeout(()=>{
-            if (history.length > 1) history.back();
-            else window.location.href = "index.html"; // or your fallback page
-        }, 500);
+            history.back();
+        }, 500); // Match CSS transition time
     });
-    // Remove fade-out on return (important!)
-    window.addEventListener("pageshow", function() {
+    // Remove fade-out on history navigation (including bfcache)
+    window.addEventListener("pageshow", function(event1) {
+        console.log("pageshow fired. persisted:", event1.persisted);
+        if (event1.persisted) // Page loaded from bfcache
         document.body.classList.remove("fade-out");
     });
-    // Just in case it comes from a hard reload or fresh navigation
+    // Fallback for normal loads
     window.addEventListener("load", function() {
         document.body.classList.remove("fade-out");
     });
 });
+if (event.persisted) {
+    document.body.style.display = "none";
+    document.body.offsetHeight; // trigger reflow
+    document.body.style.display = "";
+}
 
-//# sourceMappingURL=newinstallation.78e7dfcc.js.map
+//# sourceMappingURL=newinstallation.54f2fec7.js.map
