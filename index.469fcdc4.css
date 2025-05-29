@@ -14103,6 +14103,10 @@ button[type="button"]:hover {
     display: inline;
   }
 
+  .sm\:hidden {
+    display: none;
+  }
+
   .sm\:translate-x-0 {
     --tw-translate-x: 0px;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -14169,6 +14173,10 @@ button[type="button"]:hover {
 
   .md\:flex {
     display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:grid-cols-2 {
