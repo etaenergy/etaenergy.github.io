@@ -456,6 +456,10 @@ img, video {
   height: 100%;
 }
 
+.max-h-screen {
+  max-height: 100vh;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -661,6 +665,10 @@ img, video {
 
 .place-self-center {
   place-self: center;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
 }
 
 .overflow-x-scroll {
