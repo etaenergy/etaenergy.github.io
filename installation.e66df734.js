@@ -1,1 +1,138 @@
-function a16_0x5018(){var _0x54e303=['qpPDI','1428880iLmpPs','zrctX','startsWith','ready','gCsHJ','log','fpaOn','href','maintenance-details','4055304ZuzkWw','7709030KnDANt','939006PbJLyJ','querySelectorAll','forEach','classList','pageshow','HrGxV','22UlrrMr','a:not([target=\x27_blank\x27])','aRHMN','preventDefault','802689nBvxUa','addEventListener','click','316053qeaaeg','fade-out','DLeKu','slideUp','installation-details','IaFSR','location','body','XLWZY','add','5oIlhgq','EUByV','#modernization','#installation','8479980JfFQuO','change','gQOpV','#maintenance','includes',':checked','script.js\x20loaded','remove','modernization-details','QsRKO','slideDown','zZTsE','DOMContentLoaded'];a16_0x5018=function(){return _0x54e303;};return a16_0x5018();}var a16_0x37c711=a16_0x3a5f;function a16_0x3a5f(_0x4ba981,_0x4f404f){var _0x50181e=a16_0x5018();return a16_0x3a5f=function(_0x3a5f69,_0x142508){_0x3a5f69=_0x3a5f69-0x118;var _0x3fa7b6=_0x50181e[_0x3a5f69];return _0x3fa7b6;},a16_0x3a5f(_0x4ba981,_0x4f404f);}(function(_0x6e655a,_0x2e61a8){var _0x56ebb4=a16_0x3a5f,_0xa1396b=_0x6e655a();while(!![]){try{var _0x557fb9=parseInt(_0x56ebb4(0x119))/0x1+-parseInt(_0x56ebb4(0x149))/0x2*(parseInt(_0x56ebb4(0x11c))/0x3)+-parseInt(_0x56ebb4(0x141))/0x4*(-parseInt(_0x56ebb4(0x126))/0x5)+parseInt(_0x56ebb4(0x143))/0x6+-parseInt(_0x56ebb4(0x142))/0x7+parseInt(_0x56ebb4(0x138))/0x8+parseInt(_0x56ebb4(0x12a))/0x9;if(_0x557fb9===_0x2e61a8)break;else _0xa1396b['push'](_0xa1396b['shift']());}catch(_0x20920d){_0xa1396b['push'](_0xa1396b['shift']());}}}(a16_0x5018,0xcb89f));var $8b90c3b863de201b$exports={};console[a16_0x37c711(0x13d)](a16_0x37c711(0x130)),$(document)[a16_0x37c711(0x13b)](function(){var _0x3dbc3c=a16_0x37c711,_0x266606={'fpaOn':_0x3dbc3c(0x12f),'DLeKu':function(_0x973f46,_0x47b202){return _0x973f46(_0x47b202);},'wPOqT':function(_0x12ff6b,_0xb33907){return _0x12ff6b+_0xb33907;},'gQOpV':function(_0x243693,_0x3c442c,_0x200fd5){return _0x243693(_0x3c442c,_0x200fd5);},'qpPDI':_0x3dbc3c(0x120),'gCsHJ':function(_0xd31c04,_0x48203e,_0xfd5ddc){return _0xd31c04(_0x48203e,_0xfd5ddc);},'EUByV':_0x3dbc3c(0x132),'hUlox':function(_0x3664c5,_0x11f8e1){return _0x3664c5(_0x11f8e1);},'zrctX':_0x3dbc3c(0x140),'zZTsE':function(_0x46e4a2,_0x1b504c){return _0x46e4a2(_0x1b504c);},'IaFSR':_0x3dbc3c(0x12b),'aRHMN':_0x3dbc3c(0x128),'XLWZY':_0x3dbc3c(0x12d)};console[_0x3dbc3c(0x13d)]('Script\x20loaded');function _0x3d5f4b(_0x3060bb,_0x1ab0a2){var _0xaa83c=_0x3dbc3c;if(_0x1ab0a2['is'](_0x266606[_0xaa83c(0x13e)]))_0x266606[_0xaa83c(0x11e)]($,_0x266606['wPOqT']('#',_0x3060bb))[_0xaa83c(0x134)]();else _0x266606[_0xaa83c(0x11e)]($,'#'+_0x3060bb)[_0xaa83c(0x11f)]();}_0x266606[_0x3dbc3c(0x135)]($,_0x3dbc3c(0x129))['on'](_0x266606['IaFSR'],function(){var _0x107776=_0x3dbc3c;_0x266606[_0x107776(0x12c)](_0x3d5f4b,_0x266606[_0x107776(0x137)],$(this));}),_0x266606['hUlox']($,_0x266606[_0x3dbc3c(0x14b)])['on']('change',function(){var _0x2bf4e3=_0x3dbc3c;_0x266606[_0x2bf4e3(0x13c)](_0x3d5f4b,_0x266606[_0x2bf4e3(0x127)],_0x266606['hUlox']($,this));}),_0x266606[_0x3dbc3c(0x11e)]($,_0x266606[_0x3dbc3c(0x124)])['on'](_0x266606[_0x3dbc3c(0x121)],function(){var _0x11b123=_0x3dbc3c;_0x266606['gCsHJ'](_0x3d5f4b,_0x266606[_0x11b123(0x139)],_0x266606[_0x11b123(0x11e)]($,this));});}),document['addEventListener'](a16_0x37c711(0x136),function(){var _0x31f5b9=a16_0x37c711,_0x33756f={'FBngr':_0x31f5b9(0x11b),'QsRKO':_0x31f5b9(0x14a)};document['body'][_0x31f5b9(0x146)][_0x31f5b9(0x125)]('loaded'),document[_0x31f5b9(0x144)](_0x33756f[_0x31f5b9(0x133)])[_0x31f5b9(0x145)](_0x46a7bd=>{var _0xdeb10b=_0x31f5b9,_0x5742fc={'HrGxV':_0xdeb10b(0x11d)};_0x46a7bd['addEventListener'](_0x33756f['FBngr'],function(_0x1bd273){var _0x42c251=_0xdeb10b;this[_0x42c251(0x13f)][_0x42c251(0x13a)](window[_0x42c251(0x122)]['origin'])&&!this[_0x42c251(0x13f)][_0x42c251(0x12e)]('#')&&(_0x1bd273[_0x42c251(0x118)](),document['body'][_0x42c251(0x146)][_0x42c251(0x125)](_0x5742fc[_0x42c251(0x148)]),setTimeout(()=>{var _0x25a513=_0x42c251;window[_0x25a513(0x122)][_0x25a513(0x13f)]=this['href'];},0x1f4));});});}),window[a16_0x37c711(0x11a)](a16_0x37c711(0x147),function(_0x1aaa71){var _0x30166b=a16_0x37c711;document[_0x30166b(0x123)][_0x30166b(0x146)][_0x30166b(0x131)]('fade-out');});
+var $8b90c3b863de201b$exports = {};
+console.log('script.js loaded');
+$(document).ready(function() {
+    console.log('Script loaded');
+    // Function to toggle sections based on checkbox state
+    function toggleServiceSection(sectionId, checkbox) {
+        if (checkbox.is(':checked')) $('#' + sectionId).slideDown(); // Slide down if checked
+        else $('#' + sectionId).slideUp(); // Slide up if unchecked
+    }
+    // Event listeners for the checkboxes
+    $('#installation').on('change', function() {
+        toggleServiceSection('installation-details', $(this));
+    });
+    $('#modernization').on('change', function() {
+        toggleServiceSection('modernization-details', $(this));
+    });
+    $('#maintenance').on('change', function() {
+        toggleServiceSection('maintenance-details', $(this));
+    });
+});
+// workds fine 
+document.addEventListener("DOMContentLoaded", function() {
+    // Fade in when page loads
+    document.body.classList.add("loaded");
+    // Find all links and apply fade-out before navigation
+    document.querySelectorAll("a:not([target='_blank'])").forEach((link)=>{
+        link.addEventListener("click", function(event) {
+            if (this.href.startsWith(window.location.origin) && !this.href.includes("#")) {
+                event.preventDefault(); // Stop default navigation
+                document.body.classList.add("fade-out"); // Start fade-out effect
+                setTimeout(()=>{
+                    window.location.href = this.href; // Navigate after fade-out
+                }, 500); // Match CSS transition time (0.5s)
+            }
+        });
+    });
+});
+// Handle browser Back and Forward buttons, remove fade-out so page is visible
+window.addEventListener("pageshow", function(event) {
+    document.body.classList.remove("fade-out");
+}); // protect
+ // document.addEventListener("contextmenu", (event) => event.preventDefault());
+ // document.addEventListener("keydown", (event) => {
+ //   if (event.ctrlKey && (event.key === "u" || event.key === "s" || event.key === "i" || event.key === "j")) {
+ //     event.preventDefault();
+ //   }
+ // });
+ // document.addEventListener("keydown", function (event) {
+ //     if (
+ //         (event.ctrlKey && event.shiftKey && event.key === "I") ||  // Ctrl + Shift + I
+ //         (event.ctrlKey && event.shiftKey && event.key === "J") ||  // Ctrl + Shift + J
+ //         (event.ctrlKey && event.key === "U") ||  // Ctrl + U (View Page Source)
+ //         (event.key === "F12")  // F12 (Open DevTools)
+ //     ) {
+ //         event.preventDefault();
+ //         alert("DevTools is disabled!");
+ //     }
+ // });
+ // setInterval(() => {
+ //     if (window.outerWidth - window.innerWidth > 200 || window.outerHeight - window.innerHeight > 200) {
+ //         alert("DevTools detected! Closing the page...");
+ //         window.location.href = "about:blank"; // Redirect to an empty page
+ //     }
+ // }, 1000);
+ // (function detectDevTools() {
+ //     const threshold = 160; // Minimum difference to detect DevTools open
+ //     function checkDevTools() {
+ //         if (window.outerWidth - window.innerWidth > threshold || 
+ //             window.outerHeight - window.innerHeight > threshold) {
+ //             alert("DevTools detected! Closing the page...");
+ //             window.location.href = "about:blank"; // Redirect to an empty page
+ //         }
+ //     }
+ //     // Run detection every second
+ //     setInterval(checkDevTools, 1000);
+ //     // Detect resize event (triggers when DevTools opens)
+ //     window.addEventListener("resize", checkDevTools);
+ // })();
+ // setInterval(() => {
+ //     console.clear(); // Keeps clearing console output
+ // }, 100);
+ // // document.body.innerHTML = "";
+ // // setTimeout(() => {
+ // //     document.body.innerHTML = "<h1>Secure Content</h1><p>This content is loaded dynamically.</p>";
+ // // }, 1000);
+ // const obfuscatedCode = "console.log('This code is hidden');";
+ // eval(obfuscatedCode);
+ // (function () {
+ //     let devToolsOpened = false;
+ //     function detectDevTools() {
+ //         const element = new Image();
+ //         Object.defineProperty(element, "id", {
+ //             get: function () {
+ //                 devToolsOpened = true;
+ //                 triggerProtection();
+ //             }
+ //         });
+ //         console.log("%c", element); // Will trigger when console is open
+ //     }
+ //     function detectDebugger() {
+ //         const start = performance.now();
+ //         debugger; // Causes a delay when DevTools is open
+ //         const end = performance.now();
+ //         if (end - start > 100) {
+ //             devToolsOpened = true;
+ //             triggerProtection();
+ //         }
+ //     }
+ //     function triggerProtection() {
+ //         if (devToolsOpened) {
+ //             document.body.innerHTML = "";
+ //             setTimeout(() => {
+ //                 document.body.innerHTML = "<h1>Secure Content</h1><p>Access Restricted.</p>";
+ //             }, 1000);
+ //         }
+ //     }
+ //     function checkOnLoad() {
+ //         setTimeout(() => {
+ //             detectDevTools();
+ //             detectDebugger();
+ //         }, 500); // Delay check to ensure DevTools was already open
+ //     }
+ //     // Run checks on page load and continuously every second
+ //     checkOnLoad();
+ //     setInterval(() => {
+ //         detectDevTools();
+ //         detectDebugger();
+ //     }, 1000);
+ //     // Prevent right-click & common DevTools shortcuts
+ //     document.addEventListener("contextmenu", (e) => e.preventDefault());
+ //     document.addEventListener("keydown", (e) => {
+ //         if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I") || (e.ctrlKey && e.key === "u")) {
+ //             e.preventDefault();
+ //         }
+ //     });
+ // })();
+
+

@@ -1,1 +1,69 @@
-function a15_0x5aaf(){const _0x35f8e2=['54kFupBv','18hDECND','caSZv','appendChild','3498539DigQTi','addEventListener','click','3771200PLXpYU','1872erMrLE','scrollIntoView','smooth','createElement','querySelector','classList','jsHlw','location','218062KRmNjj','span','CORgM','DOMContentLoaded','1295112mmEaMH','.nav_menu-lottie-hamburgerr','4RjzoFV','95465NlDFlf','active','80829agHdyV','2073izodbx','load'];a15_0x5aaf=function(){return _0x35f8e2;};return a15_0x5aaf();}const a15_0x297dfb=a15_0x27ba;function a15_0x27ba(_0x282016,_0x468d05){const _0x5aaf1b=a15_0x5aaf();return a15_0x27ba=function(_0x27ba4e,_0x538364){_0x27ba4e=_0x27ba4e-0x140;let _0x363aad=_0x5aaf1b[_0x27ba4e];return _0x363aad;},a15_0x27ba(_0x282016,_0x468d05);}(function(_0x10b771,_0x47ec23){const _0x296531=a15_0x27ba,_0x592f27=_0x10b771();while(!![]){try{const _0x43abd6=-parseInt(_0x296531(0x142))/0x1*(-parseInt(_0x296531(0x158))/0x2)+-parseInt(_0x296531(0x146))/0x3*(parseInt(_0x296531(0x150))/0x4)+-parseInt(_0x296531(0x143))/0x5+-parseInt(_0x296531(0x148))/0x6*(parseInt(_0x296531(0x145))/0x7)+-parseInt(_0x296531(0x140))/0x8*(-parseInt(_0x296531(0x149))/0x9)+parseInt(_0x296531(0x14f))/0xa+-parseInt(_0x296531(0x14c))/0xb;if(_0x43abd6===_0x47ec23)break;else _0x592f27['push'](_0x592f27['shift']());}catch(_0x4dd368){_0x592f27['push'](_0x592f27['shift']());}}}(a15_0x5aaf,0x5af59),document[a15_0x297dfb(0x14d)](a15_0x297dfb(0x15b),function(){const _0x2d3820=a15_0x297dfb,_0x599b74={'NhgRB':_0x2d3820(0x144),'jsHlw':_0x2d3820(0x141),'slofP':_0x2d3820(0x159),'caSZv':_0x2d3820(0x14e)},_0x4b689d=document[_0x2d3820(0x154)](_0x599b74[_0x2d3820(0x156)]);if(_0x4b689d&&!_0x4b689d[_0x2d3820(0x154)](_0x599b74['slofP'])){const _0x41e56d=document[_0x2d3820(0x153)](_0x2d3820(0x159));_0x4b689d[_0x2d3820(0x14b)](_0x41e56d);}_0x4b689d['addEventListener'](_0x599b74[_0x2d3820(0x14a)],function(){const _0x3fcfce=_0x2d3820;_0x4b689d[_0x3fcfce(0x155)]['toggle'](_0x599b74['NhgRB']);});}),document[a15_0x297dfb(0x14d)](a15_0x297dfb(0x15b),()=>{const _0x21d686=a15_0x297dfb,_0x225750={'CORgM':_0x21d686(0x152),'uyWGb':function(_0x299bab,_0x16b016,_0x117eae){return _0x299bab(_0x16b016,_0x117eae);},'mcKVt':_0x21d686(0x147)};window[_0x21d686(0x14d)](_0x225750['mcKVt'],()=>{const _0x3a6464=_0x21d686,_0xa4b666=window[_0x3a6464(0x157)]['hash'];if(_0xa4b666)_0x225750['uyWGb'](setTimeout,()=>{const _0x397a7a=_0x3a6464,_0x20f502=document['querySelector'](_0xa4b666);if(_0x20f502)_0x20f502[_0x397a7a(0x151)]({'behavior':_0x225750[_0x397a7a(0x15a)]});},0x1f4);});}));
+// document.addEventListener("DOMContentLoaded", function () {
+//   console.log("Back button script loaded");
+//   const backBtn = document.querySelector("[data-back-btn]");
+//   console.log("Back button found:", backBtn);
+//   if (backBtn) {
+//     backBtn.addEventListener("click", function (event) {
+//       event.preventDefault();
+//       document.body.classList.add("fade-out");
+//       setTimeout(() => {
+//         history.back();
+//       }, 500); // Match your CSS transition
+//     });
+//   }
+// });
+// document.addEventListener("DOMContentLoaded", () => {
+//   console.log("Back button script loaded");
+//   const backBtn = document.querySelector("[data-back-btn]");
+//   console.log("Back button found:", backBtn);
+//   if (backBtn) {
+//     backBtn.addEventListener("click", function (event) {
+//       event.preventDefault();
+//       // Apply fade-out transition
+//       // document.body.classList.add("fade-out");
+//       // Delay going back until after transition
+//       setTimeout(() => {
+//         history.back();
+//       }, 500); // Match with CSS transition duration
+//     });
+//   }
+//   // // Ensure fade-out is removed when page is shown (from bfcache or reload)
+//   // window.addEventListener("pageshow", function (event) {
+//   //   console.log("Page show, persisted:", event.persisted);
+//   //   document.body.classList.remove("fade-out");
+//   //   // Optional: fix blank page in iOS/Safari by forcing redraw
+//   //   if (event.persisted) {
+//   //     document.body.style.display = "none";
+//   //     document.body.offsetHeight; // force reflow
+//   //     document.body.style.display = "";
+//   //   }
+//   // });
+//   // // Also remove fade-out in normal load
+//   // window.addEventListener("load", () => {
+//   //   document.body.classList.remove("fade-out");
+//   // });
+// });
+document.addEventListener("DOMContentLoaded", function() {
+    const burger = document.querySelector(".nav_menu-lottie-hamburgerr");
+    if (burger && !burger.querySelector("span")) {
+        const span = document.createElement("span");
+        burger.appendChild(span);
+    }
+    burger.addEventListener("click", function() {
+        burger.classList.toggle("active");
+    });
+});
+document.addEventListener("DOMContentLoaded", ()=>{
+    // Wait until page has fully loaded
+    window.addEventListener("load", ()=>{
+        const hash = window.location.hash;
+        if (hash) // Use timeout to wait for fade-in to complete
+        setTimeout(()=>{
+            const target = document.querySelector(hash);
+            if (target) target.scrollIntoView({
+                behavior: "smooth"
+            });
+        }, 500); // Match this with your fade animation duration
+    });
+});
+

@@ -638,14 +638,14 @@ gtag('config', 'G-8W57GSM6DL');
  
  
                      <!-- jas popup -->
+                 <!-- jas popup -->
                     <div id="popup-container" class="popup-container" data-lenis-prevent="">
-                        <!-- <div class="popup bg-[radial-gradient(at_center,_#ff6a6a,_#ffffff)]" id="popupc"> -->
                         <div class="popup bg-white" id="popupc">
-                            <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
-                                <div class="w3-content" style="max-width: 600px">
-
-
-                                    <div class="p-4 mb-2"><h4 id="subb" class="w3-center text-red-500"><b>Let's Connect</b></h4></div>
+                            <div class="w3-container w3-light-grey w3-padding-32" id="contact">
+                                <div class="" style="max-width: 600px">
+                                    <div class="p-2 mb-2">
+                                        <h4 id="subb" class="w3-center text-red-500"><b>Let's Connect</b></h4>
+                                    </div>
                                     <div class="flex flex-col">
                                         <h4 id="thank-message" class="thnk text-center text-black-700 p-6 text-lg font-medium hidden flex flex-col items-center">
                                             <b>Thanks for reaching out! We’ve got your message and will get back to you
@@ -655,20 +655,16 @@ gtag('config', 'G-8W57GSM6DL');
                                         </h4>
                                     </div>
 
+                                    <!-- iframe removed -->
 
-                                    <!-- <button onclick="document.getElementById('popup-container').style.display='none'"
-                                        class="mt-4 px-4 py-2 bg-black text-white rounded-md hover:bg-gray-800 transition">Close</button> -->
-
-
-                                    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(sessionStorage.getItem('formSubmitted') === 'true') { showThankYouMessage(); }">
-                                    </iframe>
-
-                                    <form id="myForm" action="https://script.google.com/macros/s/AKfycbyGXgegFWKD0aetPK10Hl_MBSHSGy7bPSKVjJYpWkIjesTwIkhh3PD4k1vMbPci5N8QeA/exec" method="post" target="hidden_iframe" onsubmit="return validateForm();">
-                                        <div class="w3-section">
+                                    <form id="myForm" onsubmit="return handleSubmit(event);">
+                                        <div class="">
                                             <div id="namee" class="w3-section">
                                                 <label>Name</label>
                                                 <input class="w3-border w3-input" type="text" placeholder="Your Name" id="name" name="your-name" required="">
                                             </div>
+                                            <input type="text" name="honeypot" style="display: none">
+
                                             <div id="emaill" class="w3-section">
                                                 <label>Email</label>
                                                 <input class="w3-border w3-input" type="email" placeholder="name@example.com" id="email" name="your-email" required="">
@@ -679,9 +675,15 @@ gtag('config', 'G-8W57GSM6DL');
                                             </div>
                                             <div id="message" class="w3-section">
                                                 <label>Message</label>
+                                                <!-- <textarea class="w3-border w3-input" id="message" placeholder="Feel free to message!" name="your-message" rows="4"></textarea> -->
                                                 <textarea class="w3-border w3-input" id="message" type="text" placeholder="Feel free to message!" name="your-message" rows="4"></textarea>
                                             </div>
+                                              <!-- reCAPTCHA widget -->
+                                                <div class="w3-section">
+  <div class="g-recaptcha" data-sitekey="6LcLYlQrAAAAAB4FNu3zvmG9Y9a7zCQoXpRgaEBV"></div></div>
+
                                             <div class="grid grid-cols-2 gap-4">
+                                                
                                                 <div id="submittt" class="w3-section">
                                                     <button id="cta-close-btn" class="w3-black w3-block w3-button w3-margin-bottom" type="submit">SUBMIT</button>
                                                 </div>
@@ -689,16 +691,10 @@ gtag('config', 'G-8W57GSM6DL');
                                                     <button type="button" class="popup-close w3-black w3-block w3-button w3-margin-bottom" id="close-btn">Close</button>
                                                 </div>
                                             </div>
-
                                         </div>
-
-
                                     </form>
 
-
                                 </div>
-
-
                             </div>
                         </div>
                     </div>
@@ -1540,6 +1536,10 @@ Webflow.push(function() {
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
     <script type="module" src="/index.be4c761a.js"></script>
     <script type="module" src="/installation.f7f9a399.js"></script>
+        <script src="/index.63e4f679.js"></script>
+    <!-- Load reCAPTCHA JS -->
+    <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
+    
     <script>let lastScrollTop = 0;
 const navbar = document.getElementById("navbar");
 window.addEventListener("scroll", ()=>{
