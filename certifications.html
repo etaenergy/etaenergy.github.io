@@ -119,7 +119,7 @@ gtag('config', 'G-8W57GSM6DL');
 </head>
 
 <body class="global-body bg-black">
-    <script type="module" src="/index.2f96c363.js"></script>
+    <script src="/index.809d203f.js"></script>
     <script type="module" src="/index.0ce1636f.js"></script>
     <!-- floating button -->
     <!-- Take it away -->
@@ -775,190 +775,208 @@ gtag('config', 'G-8W57GSM6DL');
 
 </script>
 
-    <!-- jas quote popup -->
-    <div id="popup-container1" class="popup-container1" data-lenis-prevent="">
-        <!-- <div class="popup bg-[radial-gradient(at_center,_#ff6a6a,_#ffffff)]" id="popupc"> -->
-        <div class="popup bg-white" id="popupc">
-            <!-- <button class="popup-close" id="close-btn1">Close</button> -->
-            <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
-                <div class="w3-content" style="max-width: 600px">
-                    <div class="mb-4 mb-4">
-                        <h4 id="subb1" class="w3-center mb-2 text-red-500"><b>Request a Quote</b></h4>
-                    </div>
-                    <h4 id="thankyou-message1" class="w3-center p-12" style="display: none"><b>Thank you
-                            for requesting a quote! Our team will review your request and get back to
-                            you shortly.</b></h4>
-
-                    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(window.submitted) { showThankYouMessage(); }"></iframe>
-
-                    <form id="quoteForm" action="https://script.google.com/macros/s/AKfycbyp0VH-0wpYn6uip2eJq34iY_dy1iq74ESjjnCiB2NKAmzUkN7AYXjRRqLMwKU3-PYJWQ/exec" method="post" target="hidden_iframe" onsubmit="window.submitted = true; return validateForm1();">
-                        <div class="w3-section1">
-                            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-                                <div class="w3-section">
-                                    <label>Name</label>
-                                    <input class="w3-border w3-input" type="text" placeholder="Your Name" id="name1" name="your-namee" required="">
-                                </div>
-                                <div class="w3-section1">
-                                    <label for="email">Email Address</label>
-                                    <input class="w3-border w3-input" type="email" placeholder="example@domain.com" id="email1" name="email" required="">
-                                </div>
-                                <div class="w3-section1">
-                                    <label for="phone">Phone Number</label>
-                                    <input class="w3-border w3-input" type="tel" placeholder="Enter your phone number" id="phone1" name="phone">
-                                </div>
-                            </div>
-
-                            <div class="w3-section1">
-                                <label class="">Our Services</label>
-                                <div class="grid grid-cols-3 text-lg gap-4">
-                                    <label class="col-span-2" for="installation">Installation</label>
-                                    <div class="pl-4"><input type="checkbox" id="installation" name="service1" value="Installation" onclick="toggleServiceSection('installation-details')">
+  <!-- jas quote popup -->
+                    <div id="popup-container1" class="popup-container1" data-lenis-prevent="">
+                        <!-- <div class="popup bg-[radial-gradient(at_center,_#ff6a6a,_#ffffff)]" id="popupc"> -->
+                        <div class="popup bg-white" id="popupc">
+                            <!-- <button class="popup-close" id="close-btn1">Close</button> -->
+                            <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+                                <div class="w3-content" style="max-width: 600px">
+                                    <div class="mb-4 mb-4">
+                                        <h4 id="subb1" class="w3-center mb-2 text-red-500"><b>Request a Quote</b></h4>
                                     </div>
+                                    <h4 id="thankyou-message1" class="w3-center p-12" style="display: none"><b>Thank you
+                                            for requesting a quote! Our team will review your request and get back to
+                                            you shortly.</b></h4>
 
-                                </div>
-                                <div class="grid grid-cols-3 text-lg gap-4">
-                                    <label class="col-span-2" for="modernization">Modernization</label>
-                                    <div class="pl-4"><input type="checkbox" id="modernization" name="service2" value="Modernization" onclick="toggleServiceSection('modernization-details')">
-                                    </div>
-                                </div>
-                                <div class="grid grid-cols-3 text-lg gap-4">
-                                    <label class="col-span-2" for="maintenance">Maintenance</label>
-                                    <div class="pl-4"><input type="checkbox" id="maintenance" name="service3" value="Maintenance" onclick="toggleServiceSection('maintenance-details')">
-                                    </div>
+                                    <!-- <iframe name="hidden_iframe" id="hidden_iframe" style="display:none"
+                                        onload="if(window.submitted) { showThankYouMessage(); }"></iframe> -->
+
+                                    <!-- <form id="quoteForm"
+                                        action="https://script.google.com/macros/s/AKfycbyp0VH-0wpYn6uip2eJq34iY_dy1iq74ESjjnCiB2NKAmzUkN7AYXjRRqLMwKU3-PYJWQ/exec"
+                                        method="post" target="hidden_iframe"
+                                        onsubmit="window.submitted = true; return validateForm1();"> -->
+                                        <form id="quoteForm" onsubmit="return handleQuoteSubmit(event)">
+                                        <div class="w3-section1">
+                                            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                                                <div class="w3-section">
+                                                    <label>Name</label>
+                                                    <input class="w3-border w3-input" type="text" placeholder="Your Name" id="name1" name="your-namee" required="">
+                                                </div>
+                                                <div class="w3-section1">
+                                                    <label for="email">Email Address</label>
+                                                    <input class="w3-border w3-input" type="email" placeholder="example@domain.com" id="email1" name="email" required="">
+                                                </div>
+                                                <div class="w3-section1">
+                                                    <label for="phone">Phone Number</label>
+                                                    <input class="w3-border w3-input" type="tel" placeholder="Enter your phone number" id="phone1" name="phone">
+                                                </div>
+                                            </div>
+
+                                            <div class="w3-section1">
+                                                <label class="">Our Services</label>
+                                                <div class="grid grid-cols-3 text-lg gap-4">
+                                                    <label class="col-span-2" for="installation">Installation</label>
+                                                    <div class="pl-4"><input type="checkbox" id="installation" name="service1" value="Installation" onclick="toggleServiceSection('installation-details')">
+                                                    </div>
+
+                                                </div>
+                                                <div class="grid grid-cols-3 text-lg gap-4">
+                                                    <label class="col-span-2" for="modernization">Modernization</label>
+                                                    <div class="pl-4"><input type="checkbox" id="modernization" name="service2" value="Modernization" onclick="toggleServiceSection('modernization-details')">
+                                                    </div>
+                                                </div>
+                                                <div class="grid grid-cols-3 text-lg gap-4">
+                                                    <label class="col-span-2" for="maintenance">Maintenance</label>
+                                                    <div class="pl-4"><input type="checkbox" id="maintenance" name="service3" value="Maintenance" onclick="toggleServiceSection('maintenance-details')"></div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Installation Details -->
+                                            <div id="installation-details" class="service-details" style="display: none">
+                                                <h4 class="w3-section1">Installation Details</h4>
+                                                <div id="equ-section1" class="w3-section1">
+                                                    <label for="equipment-type">Select Equipment Type</label>
+                                                    <select class="w3-border w3-input" id="equipment-type1" name="equipment-type1">
+                                                        <option value="----">-- Select Below --</option>
+                                                        <option value="elevator">Elevator</option>
+                                                        <option value="escalator">Escalator</option>
+                                                    </select>
+                                                </div>
+                                                <div id="budget-section1" class="w3-section1">
+                                                    <label for="budget">Installation Budget</label>
+                                                    <select class="w3-border w3-input" id="budget1" name="instbudget">
+                                                        <option value="----">-- Select Below --</option>
+                                                        <option value="Below 80,000 AED">Below 80,000 AED</option>
+                                                        <option value="80,000 AED - 90,000 AED">80,000 AED - 90,000 AED
+                                                        </option>
+                                                        <option value="90,000 AED - 100,000 AED">90,000 AED - 100,000
+                                                            AED</option>
+                                                        <option value="Above 100,000 AED">Above 100,000 AED</option>
+                                                    </select>
+                                                </div>
+
+                                                <div id="floor1-section" class="w3-section1">
+                                                    <label for="floor">Number of Floors</label>
+                                                    <input class="w3-border w3-input" type="number" placeholder="Number of Floors" min="1" id="floor1" name="instfloors">
+                                                </div>
+                                                <div id="message-section" class="w3-section1">
+                                                    <label for="message">Additional Details</label>
+                                                    <textarea class="w3-border w3-input" id="message1" type="text" placeholder="Provide any specific details" name="instadditional-details" rows="2"></textarea>
+                                                </div>
+                                            </div>
+
+                                            <!-- Modernization Details -->
+                                            <div id="modernization-details" class="service-details" style="display: none">
+                                                <h4 class="w3-section1">Modernization Details</h4>
+                                                <div id="equ-section2" class="w3-section1">
+                                                    <label for="equipment-type">Select Equipment Type</label>
+                                                    <select class="w3-border w3-input" id="equipment-type2" name="equipment-type2">
+                                                        <option value="----">-- Select Below --</option>
+                                                        <option value="elevator">Elevator</option>
+                                                        <option value="escalator">Escalator</option>
+                                                    </select>
+                                                </div>
+                                                <label for="modernization-scope">Scope of Modernization</label>
+                                                <input class="w3-border w3-input w3-section1" type="text" id="modernization-scope" name="modernization-scope">
+                                                <div id="budget-section2" class="w3-section1">
+                                                    <label for="budget">Modernization Budget</label>
+                                                    <select class="w3-border w3-input" id="budget2" name="modbudget">
+                                                        <option value="----">-- Select Below --</option>
+                                                        <option value="Below 80,000 AED">Below 80,000 AED</option>
+                                                        <option value="80,000 AED - 90,000 AED">80,000 AED - 90,000 AED
+                                                        </option>
+                                                        <option value="90,000 AED - 100,000 AED">90,000 AED - 100,000
+                                                            AED</option>
+                                                        <option value="Above 100,000 AED">Above 100,000 AED</option>
+                                                    </select>
+                                                </div>
+
+                                                <div id="floor2-section" class="w3-section1">
+                                                    <label for="floor">Number of Floors</label>
+                                                    <input class="w3-border w3-input" type="number" placeholder="Number of Floors" min="1" id="floor2" name="modfloors">
+                                                </div>
+                                                <div id="message-section1" class="w3-section1">
+                                                    <label for="message">Additional Details</label>
+                                                    <textarea class="w3-border w3-input" id="message2" type="text" placeholder="Provide any specific details" name="modadditional-details" rows="2"></textarea>
+
+                                                </div>
+                                            </div>
+
+                                            <!-- Maintenance Details -->
+                                            <div id="maintenance-details" class="service-details" style="display: none">
+                                                <h4 class="w3-section1">Maintenance Details</h4>
+                                                <div id="equ-section2" class="w3-section1">
+                                                    <label for="equipment-type">Select Equipment Type</label>
+                                                    <select class="w3-border w3-input" id="equipment-type3" name="equipment-type3">
+                                                        <option value="----">-- Select Below --</option>
+                                                        <option value="elevator">Elevator</option>
+                                                        <option value="escalator">Escalator</option>
+                                                    </select>
+                                                </div>
+
+                                                <label for="maintenance-frequency">Maintenance Frequency</label>
+                                                <select class="w3-border w3-section1 w3-input" id="maintenance-frequency" name="maintenance-frequency">
+                                                    <option value="----">-- Select Below --</option>
+                                                    <option value="Monthly">Monthly</option>
+                                                    <option value="Quarterly">Quarterly</option>
+                                                    <option value="Yearly">Yearly</option>
+                                                </select>
+
+                                                <div id="budget-section3" class="w3-section1">
+                                                    <label class="w3-section1" for="budget">Maintenance Budget</label>
+                                                    <select class="w3-border w3-input" id="budget3" name="maintbudget">
+                                                        <option value="----">-- Select Below --</option>
+                                                        <option value="Below 80,000 AED">Below 80,000 AED</option>
+                                                        <option value="80,000 AED - 90,000 AED">80,000 AED - 90,000 AED
+                                                        </option>
+                                                        <option value="90,000 AED - 100,000 AED">90,000 AED - 100,000
+                                                            AED</option>
+                                                        <option value="Above 100,000 AED">Above 100,000 AED</option>
+                                                    </select>
+                                                </div>
+
+                                                <div id="floor3-section" class="w3-section1">
+                                                    <label for="floor">Number of Floors</label>
+                                                    <input class="w3-border w3-input" type="number" placeholder="Number of Floors" min="1" id="floor3" name="maintfloors">
+                                                </div>
+                                                <div id="message-section2" class="w3-section1">
+                                                    <label for="message">Additional Details</label>
+                                                    <textarea class="w3-border w3-input" id="message3" type="text" placeholder="Provide any specific details" name="maintadditional-details" rows="2"></textarea>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <!-- <div class="w3-section">
+                                            <div class="g-recaptcha"
+                                                data-sitekey="6LcLYlQrAAAAAB4FNu3zvmG9Y9a7zCQoXpRgaEBV"></div>
+                                            <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                                        </div> -->
+
+                                        <!-- reCAPTCHA widget -->
+                                        <!-- <div class="w3-section">
+  <div class="g-recaptcha" data-sitekey="6LeKT1UrAAAAAETU7mbRso_5yC7hXnEdL324Omu5"></div>
+</div> -->
+
+ <!-- reCAPTCHA widget -->
+                                            <!-- <div class="w3-section">
+                                                 <div class="g-recaptcha"
+                                                    data-sitekey="6LeKT1UrAAAAAETU7mbRso_5yC7hXnEdL324Omu5"></div>
+                                            </div> -->
+
+                                            <div class="w3-section">
+                                                <button id="cta-close-btn" class="w3-black w3-block w3-button w3-margin-bottom" type="submit">Request Quote</button>
+                                            </div>
+                                            <div class="w3-section">
+                                                <button type="button" class="popup-close w3-black w3-block w3-button w3-margin-bottom" id="close-btn1">Close</button>
+                                            </div>
+                                        </form></div>
+                                    
                                 </div>
                             </div>
-
-                            <!-- Installation Details -->
-                            <div id="installation-details" class="service-details" style="display: none">
-                                <h4 class="w3-section1">Installation Details</h4>
-                                <div id="equ-section1" class="w3-section1">
-                                    <label for="equipment-type">Select Equipment Type</label>
-                                    <select class="w3-border w3-input" id="equipment-type1" name="equipment-type1">
-                                        <option value="----">-- Select Below --</option>
-                                        <option value="elevator">Elevator</option>
-                                        <option value="escalator">Escalator</option>
-                                    </select>
-                                </div>
-                                <div id="budget-section1" class="w3-section1">
-                                    <label for="budget">Installation Budget</label>
-                                    <select class="w3-border w3-input" id="budget1" name="instbudget">
-                                        <option value="----">-- Select Below --</option>
-                                        <option value="Below 80,000 AED">Below 80,000 AED</option>
-                                        <option value="80,000 AED - 90,000 AED">80,000 AED - 90,000 AED
-                                        </option>
-                                        <option value="90,000 AED - 100,000 AED">90,000 AED - 100,000
-                                            AED</option>
-                                        <option value="Above 100,000 AED">Above 100,000 AED</option>
-                                    </select>
-                                </div>
-
-                                <div id="floor1-section" class="w3-section1">
-                                    <label for="floor">Number of Floors</label>
-                                    <input class="w3-border w3-input" type="number" placeholder="Number of Floors" min="1" id="floor1" name="instfloors">
-                                </div>
-                                <div id="message-section" class="w3-section1">
-                                    <label for="message">Additional Details</label>
-                                    <textarea class="w3-border w3-input" id="message1" type="text" placeholder="Provide any specific details" name="instadditional-details" rows="2"></textarea>
-                                </div>
-                            </div>
-
-                            <!-- Modernization Details -->
-                            <div id="modernization-details" class="service-details" style="display: none">
-                                <h4 class="w3-section1">Modernization Details</h4>
-                                <div id="equ-section2" class="w3-section1">
-                                    <label for="equipment-type">Select Equipment Type</label>
-                                    <select class="w3-border w3-input" id="equipment-type2" name="equipment-type2">
-                                        <option value="----">-- Select Below --</option>
-                                        <option value="elevator">Elevator</option>
-                                        <option value="escalator">Escalator</option>
-                                    </select>
-                                </div>
-                                <label for="modernization-scope">Scope of Modernization</label>
-                                <input class="w3-border w3-input" type="text" id="modernization-scope" name="modernization-scope">
-                                <div id="budget-section2" class="w3-section1">
-                                    <label for="budget">Modernization Budget</label>
-                                    <select class="w3-border w3-input" id="budget2" name="modbudget">
-                                        <option value="----">-- Select Below --</option>
-                                        <option value="Below 80,000 AED">Below 80,000 AED</option>
-                                        <option value="80,000 AED - 90,000 AED">80,000 AED - 90,000 AED
-                                        </option>
-                                        <option value="90,000 AED - 100,000 AED">90,000 AED - 100,000
-                                            AED</option>
-                                        <option value="Above 100,000 AED">Above 100,000 AED</option>
-                                    </select>
-                                </div>
-
-                                <div id="floor2-section" class="w3-section1">
-                                    <label for="floor">Number of Floors</label>
-                                    <input class="w3-border w3-input" type="number" placeholder="Number of Floors" min="1" id="floor2" name="modfloors">
-                                </div>
-                                <div id="message-section1" class="w3-section1">
-                                    <label for="message">Additional Details</label>
-                                    <textarea class="w3-border w3-input" id="message2" type="text" placeholder="Provide any specific details" name="modadditional-details" rows="2"></textarea>
-
-                                </div>
-                            </div>
-
-                            <!-- Maintenance Details -->
-                            <div id="maintenance-details" class="service-details" style="display: none">
-                                <h4 class="w3-section1">Maintenance Details</h4>
-                                <div id="equ-section2" class="w3-section1">
-                                    <label for="equipment-type">Select Equipment Type</label>
-                                    <select class="w3-border w3-input" id="equipment-type3" name="equipment-type3">
-                                        <option value="----">-- Select Below --</option>
-                                        <option value="elevator">Elevator</option>
-                                        <option value="escalator">Escalator</option>
-                                    </select>
-                                </div>
-
-                                <label for="maintenance-frequency">Maintenance Frequency</label>
-                                <select class="w3-border w3-section1 w3-input" id="maintenance-frequency" name="maintenance-frequency">
-                                    <option value="----">-- Select Below --</option>
-                                    <option value="Monthly">Monthly</option>
-                                    <option value="Quarterly">Quarterly</option>
-                                    <option value="Yearly">Yearly</option>
-                                </select>
-
-                                <div id="budget-section3" class="w3-section1">
-                                    <label class="w3-section1" for="budget">Maintenance Budget</label>
-                                    <select class="w3-border w3-input" id="budget3" name="maintbudget">
-                                        <option value="----">-- Select Below --</option>
-                                        <option value="Below 80,000 AED">Below 80,000 AED</option>
-                                        <option value="80,000 AED - 90,000 AED">80,000 AED - 90,000 AED
-                                        </option>
-                                        <option value="90,000 AED - 100,000 AED">90,000 AED - 100,000
-                                            AED</option>
-                                        <option value="Above 100,000 AED">Above 100,000 AED</option>
-                                    </select>
-                                </div>
-
-                                <div id="floor3-section" class="w3-section1">
-                                    <label for="floor">Number of Floors</label>
-                                    <input class="w3-border w3-input" type="number" placeholder="Number of Floors" min="1" id="floor3" name="maintfloors">
-                                </div>
-                                <div id="message-section2" class="w3-section1">
-                                    <label for="message">Additional Details</label>
-                                    <textarea class="w3-border w3-input" id="message3" type="text" placeholder="Provide any specific details" name="maintadditional-details" rows="2"></textarea>
-
-                                </div>
-                            </div>
-
                         </div>
-
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <div class="w3-section">
-                                <button id="cta-close-btn" class="w3-black w3-block w3-button w3-margin-bottom" type="submit">Request Quote</button>
-                            </div>
-                            <div class="w3-section">
-                                <button type="button" class="popup-close w3-black w3-block w3-button w3-margin-bottom" id="close-btn1">Close</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <app-footer _ngcontent-sc314="" class="ng-tns-c314-2" _nghost-sc312="">
         <footer _ngcontent-sc312="">
             <!-- <div _ngcontent-sc312="" class="line"></div> -->

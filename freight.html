@@ -116,7 +116,7 @@ gtag('config', 'G-8W57GSM6DL');
 </head>
 
 <body class="global-body bg-black">
-    <script type="module" src="/index.2f96c363.js"></script>
+    <script src="/index.809d203f.js"></script>
     <script type="module" src="/index.0ce1636f.js"></script>
     <!-- floating button -->
     <!-- Take it away -->
@@ -881,7 +881,7 @@ gtag('config', 'G-8W57GSM6DL');
 
 </script>
 
-                         <!-- jas quote popup -->
+              <!-- jas quote popup -->
                     <div id="popup-container1" class="popup-container1" data-lenis-prevent="">
                         <!-- <div class="popup bg-[radial-gradient(at_center,_#ff6a6a,_#ffffff)]" id="popupc"> -->
                         <div class="popup bg-white" id="popupc">
@@ -895,9 +895,14 @@ gtag('config', 'G-8W57GSM6DL');
                                             for requesting a quote! Our team will review your request and get back to
                                             you shortly.</b></h4>
 
-                                    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(window.submitted) { showThankYouMessage(); }"></iframe>
+                                    <!-- <iframe name="hidden_iframe" id="hidden_iframe" style="display:none"
+                                        onload="if(window.submitted) { showThankYouMessage(); }"></iframe> -->
 
-                                    <form id="quoteForm" action="https://script.google.com/macros/s/AKfycbyp0VH-0wpYn6uip2eJq34iY_dy1iq74ESjjnCiB2NKAmzUkN7AYXjRRqLMwKU3-PYJWQ/exec" method="post" target="hidden_iframe" onsubmit="window.submitted = true; return validateForm1();">
+                                    <!-- <form id="quoteForm"
+                                        action="https://script.google.com/macros/s/AKfycbyp0VH-0wpYn6uip2eJq34iY_dy1iq74ESjjnCiB2NKAmzUkN7AYXjRRqLMwKU3-PYJWQ/exec"
+                                        method="post" target="hidden_iframe"
+                                        onsubmit="window.submitted = true; return validateForm1();"> -->
+                                        <form id="quoteForm" onsubmit="return handleQuoteSubmit(event)">
                                         <div class="w3-section1">
                                             <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
                                                 <div class="w3-section">
@@ -979,7 +984,7 @@ gtag('config', 'G-8W57GSM6DL');
                                                     </select>
                                                 </div>
                                                 <label for="modernization-scope">Scope of Modernization</label>
-                                                <input class="w3-border w3-input" type="text" id="modernization-scope" name="modernization-scope">
+                                                <input class="w3-border w3-input w3-section1" type="text" id="modernization-scope" name="modernization-scope">
                                                 <div id="budget-section2" class="w3-section1">
                                                     <label for="budget">Modernization Budget</label>
                                                     <select class="w3-border w3-input" id="budget2" name="modbudget">
@@ -1050,20 +1055,34 @@ gtag('config', 'G-8W57GSM6DL');
 
                                         </div>
 
-                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                        <!-- <div class="w3-section">
+                                            <div class="g-recaptcha"
+                                                data-sitekey="6LcLYlQrAAAAAB4FNu3zvmG9Y9a7zCQoXpRgaEBV"></div>
+                                            <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                                        </div> -->
+
+                                        <!-- reCAPTCHA widget -->
+                                        <!-- <div class="w3-section">
+  <div class="g-recaptcha" data-sitekey="6LeKT1UrAAAAAETU7mbRso_5yC7hXnEdL324Omu5"></div>
+</div> -->
+
+ <!-- reCAPTCHA widget -->
+                                            <!-- <div class="w3-section">
+                                                 <div class="g-recaptcha"
+                                                    data-sitekey="6LeKT1UrAAAAAETU7mbRso_5yC7hXnEdL324Omu5"></div>
+                                            </div> -->
+
                                             <div class="w3-section">
                                                 <button id="cta-close-btn" class="w3-black w3-block w3-button w3-margin-bottom" type="submit">Request Quote</button>
                                             </div>
                                             <div class="w3-section">
                                                 <button type="button" class="popup-close w3-black w3-block w3-button w3-margin-bottom" id="close-btn1">Close</button>
                                             </div>
-                                        </div>
-                                    </form>
+                                        </form></div>
+                                    
                                 </div>
                             </div>
                         </div>
-                    </div>
-
 
                      <!-- ENROLL SECTION -->
 
