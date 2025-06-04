@@ -101,7 +101,7 @@
     <link rel="stylesheet" href="/index.4d602460.css">
 
 
-<script src="https://www.google.com/recaptcha/api.js?render=6LdPLVUrAAAAAPyds58nQvIXWs-E92sFD7G9LHzD"></script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js?render=6LdPLVUrAAAAAPyds58nQvIXWs-E92sFD7G9LHzD"></script> -->
 
 </head>
 
@@ -290,7 +290,7 @@
                                         </div>
                                     </div>
 
-                                
+
                                 </a>
 
 
@@ -1937,114 +1937,63 @@ searchInput.addEventListener("input", function() {
 </script>
 
                     <!-- jas popup -->
-                    <!-- Contact Form Popup -->
-<div id="popup-container" class="popup-container" data-lenis-prevent="">
-  <div class="popup bg-white" id="popupc">
-    <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
-      <div class="w3-content" style="max-width: 600px">
-        <div class="p-4 mb-2">
-          <h4 id="subb" class="w3-center text-red-500"><b>Let's Connect</b></h4>
-        </div>
+                    <div id="popup-container" class="popup-container" data-lenis-prevent="">
+                        <div class="popup bg-white" id="popupc">
+                            <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+                                <div class="w3-content" style="max-width: 600px">
+                                    <div class="p-4 mb-2">
+                                        <h4 id="subb" class="w3-center text-red-500"><b>Let's Connect</b></h4>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <h4 id="thank-message" class="thnk text-center text-black-700 p-6 text-lg font-medium hidden flex flex-col items-center">
+                                            <b>Thanks for reaching out! We’ve got your message and will get back to you
+                                                shortly.</b><br>
+                                            <button onclick="document.getElementById('popup-container').style.display='none'" class="mt-4 px-4 py-2 bg-black text-white rounded-md hover:bg-gray-800 transition">Close</button>
+                                            <button onclick="resetFormState()" class="px-4 py-2 bg-white text-black border border-gray-400 rounded-md hover:bg-gray-100 transition">Reset</button>
+                                        </h4>
+                                    </div>
 
-        <!-- Thank You Message -->
-        <div class="flex flex-col">
-          <div id="thank-message" class="thnk text-center text-black-700 p-6 text-lg font-medium hidden flex flex-col items-center">
-            <b>Thanks for reaching out! We’ve got your message and will get back to you shortly.</b><br>
-            <button onclick="document.getElementById('popup-container').style.display='none'" class="mt-4 px-4 py-2 bg-black text-white rounded-md hover:bg-gray-800 transition">Close</button>
-            <button onclick="resetFormState()" class="mt-2 px-4 py-2 bg-white text-black border border-gray-400 rounded-md hover:bg-gray-100 transition">Reset</button>
-          </div>
-        </div>
+                                    <!-- iframe removed -->
 
-        <!-- Contact Form -->
-        <form id="myForm">
-          <div class="w3-section">
-            <div class="w3-section" id="name-wrapper">
-              <label>Name</label>
-              <input class="w3-border w3-input" type="text" placeholder="Your Name" id="name" name="your-name" required="">
-            </div>
+                                    <form id="myForm" onsubmit="return handleSubmit(event);">
+                                        <div class="w3-section">
+                                            <div id="namee" class="w3-section">
+                                                <label>Name</label>
+                                                <input class="w3-border w3-input" type="text" placeholder="Your Name" id="name" name="your-name" required="">
+                                            </div>
+                                            <input type="text" name="honeypot" style="display: none">
 
-            <!-- Honeypot -->
-            <input type="text" name="honeypot" style="display: none" tabindex="-1" aria-hidden="true">
+                                            <div id="emaill" class="w3-section">
+                                                <label>Email</label>
+                                                <input class="w3-border w3-input" type="email" placeholder="name@example.com" id="email" name="your-email" required="">
+                                            </div>
+                                            <div id="phonee" class="w3-section">
+                                                <label>Phone [optional]</label>
+                                                <input class="w3-border w3-input" type="text" placeholder="056****058 [optional]" id="phone" name="your-number">
+                                            </div>
+                                            <div id="message" class="w3-section">
+                                                <label>Message</label>
+                                                <!-- <textarea class="w3-border w3-input" id="message" placeholder="Feel free to message!" name="your-message" rows="4"></textarea> -->
+                                                <textarea class="w3-border w3-input" id="message" type="text" placeholder="Feel free to message!" name="your-message" rows="4"></textarea>
+                                            </div>
+                                            <div class="grid grid-cols-2 gap-4">
+                                                <div id="submittt" class="w3-section">
+                                                    <button id="cta-close-btn" class="w3-black w3-block w3-button w3-margin-bottom" type="submit">SUBMIT</button>
+                                                </div>
+                                                <div class="w3-section">
+                                                    <button type="button" class="popup-close w3-black w3-block w3-button w3-margin-bottom" id="close-btn">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
 
-            <div class="w3-section" id="email-wrapper">
-              <label>Email</label>
-              <input class="w3-border w3-input" type="email" placeholder="name@example.com" id="email" name="your-email" required="">
-            </div>
-
-            <div class="w3-section" id="phone-wrapper">
-              <label>Phone [optional]</label>
-              <input class="w3-border w3-input" type="text" placeholder="056****058 [optional]" id="phone" name="your-number">
-            </div>
-
-            <div class="w3-section" id="message-wrapper">
-              <label>Message</label>
-              <textarea class="w3-border w3-input" id="message" placeholder="Feel free to message!" name="your-message" rows="4"></textarea>
-            </div>
-
-            <!-- Submit / Close Buttons -->
-            <div class="grid grid-cols-2 gap-4">
-              <div class="w3-section">
-                <button id="cta-close-btn" class="w3-black w3-block w3-button w3-margin-bottom" type="submit">SUBMIT</button>
-              </div>
-              <div class="w3-section">
-                <button type="button" class="popup-close w3-black w3-block w3-button w3-margin-bottom" id="close-btn">Close</button>
-              </div>
-            </div>
-          </div>
-        </form>
-
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Include reCAPTCHA script -->
-<script src="https://www.google.com/recaptcha/api.js?render=6LdPLVUrAAAAAPyds58nQvIXWs-E92sFD7G9LHzD"></script>
-
-<!-- Script Logic -->
-<script>const form = document.getElementById('myForm');
-const thankMessage = document.getElementById('thank-message');
-const popupContainer = document.getElementById('popup-container');
-const closeBtn = document.getElementById('close-btn');
-// Submit handler with reCAPTCHA
-form.addEventListener('submit', function(event) {
-    event.preventDefault();
-    grecaptcha.ready(function() {
-        grecaptcha.execute('6LdPLVUrAAAAAPyds58nQvIXWs-E92sFD7G9LHzD', {
-            action: 'submit'
-        }).then(function(token) {
-            // Remove existing token input if present
-            const existingToken = document.querySelector('input[name="g-recaptcha-response"]');
-            if (existingToken) existingToken.remove();
-            // Add new token input
-            const tokenInput = document.createElement('input');
-            tokenInput.type = 'hidden';
-            tokenInput.name = 'g-recaptcha-response';
-            tokenInput.value = token;
-            form.appendChild(tokenInput);
-            // Simulate successful submission (replace with actual AJAX/fetch if needed)
-            form.reset();
-            form.classList.add('hidden');
-            thankMessage.classList.remove('hidden');
-        });
-    });
-});
-// Close button for popup
-closeBtn.addEventListener('click', ()=>{
-    popupContainer.style.display = 'none';
-});
-// Reset button functionality
-function resetFormState() {
-    form.reset();
-    thankMessage.classList.add('hidden');
-    form.classList.remove('hidden');
-}
-
-</script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
 
-
-<!-- <script>async function handleSubmit(event) {
+                    <!-- <script>async function handleSubmit(event) {
     event.preventDefault();
 
     // Validate form using your existing validation
@@ -2291,7 +2240,7 @@ function resetFormState() {
                                             </div>
 
                                         </div>
-                                        
+
                                         <!-- <div class="w3-section">
                                             <div class="g-recaptcha"
                                                 data-sitekey="6LcLYlQrAAAAAB4FNu3zvmG9Y9a7zCQoXpRgaEBV"></div>
