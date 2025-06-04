@@ -596,32 +596,23 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"1Jvr0":[function(require,module,exports,__globalThis) {
-// window.submitted = false; // Declare a global variable to track form submission
+window.submitted = false; // Declare a global variable to track form submission
 // var quoteRecaptchaWidgetId;
 // function onRecaptchaLoad() {
 //     quoteRecaptchaWidgetId = grecaptcha.render('recaptcha-quote', {
 //         'sitekey': '6LeKT1UrAAAAAETU7mbRso_5yC7hXnEdL324Omu5'  // <-- Put your actual reCAPTCHA site key here
 //     });
 // }
-window.submitted = false;
+// Function to show thank-you message after submission
 function showThankYouMessage1() {
     document.getElementById('thankyou-message1').style.display = 'block';
     document.getElementById('subb1').style.display = 'none';
     document.getElementById('quoteForm').style.display = 'none';
+    // Close popup after a delay (optional)
     setTimeout(()=>{
         document.getElementById('popup-container1').style.display = 'none';
     }, 3000);
 }
-// Function to show thank-you message after submission
-// function showThankYouMessage1() {
-//     document.getElementById('thankyou-message1').style.display = 'block';
-//     document.getElementById('subb1').style.display = 'none';
-//     document.getElementById('quoteForm').style.display = 'none';
-//     // Close popup after a delay (optional)
-//     setTimeout(() => {
-//         document.getElementById('popup-container1').style.display = 'none';
-//     }, 3000);
-// }
 // Validate Name
 function validateName1() {
     var name1 = document.getElementById('name1').value.trim();
@@ -707,43 +698,37 @@ function validateServiceDetails() {
     return true;
 }
 // Validate Full Form
-// window.validateForm1 = function () {
-//     if (!validateName1() || !validatePhone1() || !validateEmail1() || !validateServiceSelection() || !validateServiceDetails()) {
-//         alert('Form not submitted');
-//         return false;
-//     } else {
-//         window.submitted = true;
-//         setTimeout(showThankYouMessage1, 100); // Show the thank-you message after 1 second
-//         return true;
-//     }
-// };
 window.validateForm1 = function() {
     if (!validateName1() || !validatePhone1() || !validateEmail1() || !validateServiceSelection() || !validateServiceDetails()) {
         alert('Form not submitted');
         return false;
+    } else {
+        window.submitted = true;
+        setTimeout(showThankYouMessage1, 100); // Show the thank-you message after 1 second
+        return true;
     }
-    // Check if reCAPTCHA is loaded
-    if (typeof grecaptcha === "undefined") {
-        alert("reCAPTCHA is still loading. Please wait a moment and try again.");
-        return false;
-    }
-    // Check if reCAPTCHA is completed
-    var recaptchaResponse = grecaptcha.getResponse();
-    if (!recaptchaResponse || recaptchaResponse.length === 0) {
-        alert("Please complete the reCAPTCHA challenge!");
-        return false;
-    }
-    // If all validations pass and reCAPTCHA is complete
-    window.submitted = true;
-    setTimeout(showThankYouMessage1, 100); // Show the thank-you message after 1 second
-    return true;
 };
-// Attach event listener on DOM ready
-document.addEventListener('DOMContentLoaded', ()=>{
-    const form = document.getElementById('quoteForm');
-    form.addEventListener('submit', handleQuoteFormSubmit);
-// Your existing popup logic (close button, show popup) here...
-});
+// window.validateForm1 = function () {
+//     if (!validateName1() || !validatePhone1() || !validateEmail1() || !validateServiceSelection() || !validateServiceDetails()) {
+//         alert('Form not submitted. Please correct the errors.');
+//         return false;
+//     }
+//     // ✅ Check if reCAPTCHA is available
+//     if (typeof grecaptcha === "undefined") {
+//         alert("reCAPTCHA is still loading. Please wait a moment and try again.");
+//         return false;
+//     }
+//     // ✅ Check if reCAPTCHA was completed
+//     var recaptchaResponse = grecaptcha.getResponse();
+//     if (!recaptchaResponse || recaptchaResponse.length === 0) {
+//         alert("Please complete the reCAPTCHA challenge!");
+//         return false;
+//     }
+//     // ✅ If everything is valid
+//     window.submitted = true;
+//     setTimeout(showThankYouMessage1, 100);
+//     return true;
+// };
 // Handle Popup Logic Quote
 document.addEventListener("DOMContentLoaded", function() {
     var popupContainer1 = document.getElementById('popup-container1');
@@ -776,181 +761,7 @@ document.addEventListener("DOMContentLoaded", function() {
             sessionStorage.setItem('popupShown', true);
         });
     });
-}); /////
- // window.submitted = false;
- // var quoteRecaptchaWidgetId;
- // function onRecaptchaLoad() {
- //   quoteRecaptchaWidgetId = grecaptcha.render('recaptcha-quote', {
- //     'sitekey': '6LeKT1UrAAAAAETU7mbRso_5yC7hXnEdL324Omu5'
- //   });
- // }
- // window.onload = function () {
- //   onRecaptchaLoad();
- // };
- // function showThankYouMessage1() {
- //   document.getElementById('thankyou-message1').style.display = 'block';
- //   document.getElementById('subb1').style.display = 'none';
- //   document.getElementById('quoteForm').style.display = 'none';
- //   setTimeout(() => {
- //     document.getElementById('popup-container1').style.display = 'none';
- //   }, 3000);
- // }
- // // Validation: Name
- // function validateName1() {
- //   var name1 = document.getElementById('name1').value.trim();
- //   if (name1.length === 0) {
- //     alert("Name can't be blank");
- //     return false;
- //   }
- //   var nameRegex = /^[A-Za-zÀ-ÖØ-öø-ÿ'-]{2,}(?: [A-Za-zÀ-ÖØ-öø-ÿ'-]{2,}){0,2}$/;
- //   if (!nameRegex.test(name1)) {
- //     alert('Please enter a valid name (letters only, up to 3 words)');
- //     return false;
- //   }
- //   return true;
- // }
- // // Validation: Phone (optional)
- // function validatePhone1() {
- //   var phone1 = document.getElementById('phone1').value.trim();
- //   if (phone1.length === 0) return true;
- //   var intlRegex = /^\+?[1-9]\d{5,14}$/;
- //   if (!intlRegex.test(phone1)) {
- //     alert('Please enter a valid international phone number in the format +123456789...');
- //     return false;
- //   }
- //   return true;
- // }
- // // Validation: Email
- // function validateEmail1() {
- //   var email1 = document.getElementById('email1').value.trim();
- //   if (email1 === '') {
- //     alert('Email can\'t be blank');
- //     return false;
- //   }
- //   if (!/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/.test(email1)) {
- //     alert('Please enter a correct email address');
- //     return false;
- //   }
- //   return true;
- // }
- // // Validation: At least one service selected
- // function validateServiceSelection() {
- //   const installationVisible = document.getElementById('installation-details').style.display !== 'none';
- //   const modernizationVisible = document.getElementById('modernization-details').style.display !== 'none';
- //   const maintenanceVisible = document.getElementById('maintenance-details').style.display !== 'none';
- //   if (!installationVisible && !modernizationVisible && !maintenanceVisible) {
- //     alert('Please select at least one service (Installation, Modernization, or Maintenance).');
- //     return false;
- //   }
- //   return true;
- // }
- // // Validation: At least one service details filled correctly
- // function validateServiceDetails() {
- //   let isAnyValid = false;
- //   const installationVisible = document.getElementById('installation-details').style.display !== 'none';
- //   if (installationVisible) {
- //     const budget1 = document.getElementById('budget1').value;
- //     const floors1 = document.getElementById('floor1').value.trim();
- //     if (budget1 !== '----' && floors1 !== '' && !isNaN(floors1) && parseInt(floors1) >= 1) {
- //       isAnyValid = true;
- //     }
- //   }
- //   const modernizationVisible = document.getElementById('modernization-details').style.display !== 'none';
- //   if (modernizationVisible) {
- //     const budget2 = document.getElementById('budget2').value;
- //     const floors2 = document.getElementById('floor2').value.trim();
- //     const scope = document.getElementById('modernization-scope').value.trim();
- //     if (budget2 !== '----' && floors2 !== '' && !isNaN(floors2) && parseInt(floors2) >= 1 && scope !== '') {
- //       isAnyValid = true;
- //     }
- //   }
- //   const maintenanceVisible = document.getElementById('maintenance-details').style.display !== 'none';
- //   if (maintenanceVisible) {
- //     const frequency = document.getElementById('maintenance-frequency').value;
- //     const budget3 = document.getElementById('budget3').value;
- //     const floors3 = document.getElementById('floor3').value.trim();
- //     if (frequency !== '----' && budget3 !== '----' && floors3 !== '' && !isNaN(floors3) && parseInt(floors3) >= 1) {
- //       isAnyValid = true;
- //     }
- //   }
- //   if (!isAnyValid) {
- //     alert('Please fill in valid details for at least one visible service section.');
- //     return false;
- //   }
- //   return true;
- // }
- // // Validate the full form and reCAPTCHA
- // window.validateForm1 = function () {
- //   if (!validateName1() || !validatePhone1() || !validateEmail1() || !validateServiceSelection() || !validateServiceDetails()) {
- //     alert('Form not submitted');
- //     return false;
- //   }
- //   if (typeof grecaptcha === "undefined") {
- //     alert("reCAPTCHA is still loading. Please wait a moment and try again.");
- //     return false;
- //   }
- //   var recaptchaResponse = grecaptcha.getResponse();
- //   if (!recaptchaResponse || recaptchaResponse.length === 0) {
- //     alert("Please complete the reCAPTCHA challenge!");
- //     return false;
- //   }
- //   return true;
- // };
- // // Handle form submission
- // async function handleQuoteFormSubmit(event) {
- //   event.preventDefault();
- //   if (!validateForm1()) return;
- //   const submitBtn = document.getElementById('subb1');
- //   submitBtn.disabled = true;
- //   submitBtn.textContent = "Submitting...";
- //   const form = document.getElementById('quoteForm');
- //   const formData = new FormData(form);
- //   try {
- //     const response = await fetch('https://script.google.com/macros/s/AKfycbyp0VH-0wpYn6uip2eJq34iY_dy1iq74ESjjnCiB2NKAmzUkN7AYXjRRqLMwKU3-PYJWQ/exec', {
- //       method: 'POST',
- //       body: formData
- //     });
- //     if (response.ok) {
- //       showThankYouMessage1();
- //     } else {
- //       alert('Something went wrong. Please try again later.');
- //       submitBtn.disabled = false;
- //       submitBtn.textContent = "Submit";
- //     }
- //   } catch (error) {
- //     console.error('Submission error:', error);
- //     alert('Submission failed. Please check your network or try again.');
- //     submitBtn.disabled = false;
- //     submitBtn.textContent = "Submit";
- //   }
- // }
- // // Attach DOM ready logic
- // document.addEventListener('DOMContentLoaded', () => {
- //   const form = document.getElementById('quoteForm');
- //   form.addEventListener('submit', handleQuoteFormSubmit);
- // });
- // // Popup logic
- // document.addEventListener("DOMContentLoaded", function () {
- //   var popupContainer1 = document.getElementById('popup-container1');
- //   var closeBtn1 = document.getElementById('close-btn1');
- //   var contactUsLinks1 = document.querySelectorAll('#quote-us-link-desktop, #quote-us-link-mobile');
- //   closeBtn1.addEventListener('click', function () {
- //     popupContainer1.classList.add('hide');
- //     setTimeout(function () {
- //       popupContainer1.style.display = 'none';
- //       popupContainer1.classList.remove('hide', 'show');
- //     }, 500);
- //     sessionStorage.setItem('popupShown', true);
- //   });
- //   contactUsLinks1.forEach(link => {
- //     link.addEventListener('click', function (event) {
- //       event.preventDefault();
- //       popupContainer1.style.display = 'block';
- //       popupContainer1.classList.add('show');
- //       sessionStorage.setItem('popupShown', true);
- //     });
- //   });
- // });
+});
 
 },{}]},["aVgSH","1Jvr0"], "1Jvr0", "parcelRequire94c2")
 
