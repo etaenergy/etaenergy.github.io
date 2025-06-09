@@ -65,7 +65,7 @@
     <link rel="stylesheet" href="/index.765038d8.css">
     <link rel="stylesheet" href="/index.dc64aefb.css">
     <link rel="stylesheet" href="/index.07da8792.css">
-    <link rel="stylesheet" href="/index.a94b28b7.css">
+    <link rel="stylesheet" href="/index.db5a1eec.css">
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -1977,9 +1977,12 @@ searchInput.addEventListener("input", function() {
                                                 <textarea class="w3-border w3-input" id="message" type="text" placeholder="Feel free to message!" name="your-message" rows="4"></textarea>
                                             </div>
                                             <!-- reCAPTCHA widget -->
-                                            <div class="w3-section">
-                                                <div class="g-recaptcha" data-sitekey="6LcLYlQrAAAAAB4FNu3zvmG9Y9a7zCQoXpRgaEBV"></div>
-                                            </div>
+                                            <!-- <div class="w3-section">
+                                                <div class="g-recaptcha"
+                                                    data-sitekey="6LcLYlQrAAAAAB4FNu3zvmG9Y9a7zCQoXpRgaEBV"></div>
+                                            </div> -->
+                                            <!-- CONTACT FORM -->
+                                            <div id="recaptcha-contact" class="w3-section"></div>
 
                                             <div class="grid grid-cols-2 gap-4">
 
@@ -1997,6 +2000,22 @@ searchInput.addEventListener("input", function() {
                             </div>
                         </div>
                     </div>
+
+
+                    <script>var recaptchaContact;
+var recaptchaQuote;
+function onloadCallback() {
+    recaptchaContact = grecaptcha.render('recaptcha-contact', {
+        'sitekey': '6LcLYlQrAAAAAB4FNu3zvmG9Y9a7zCQoXpRgaEBV'
+    });
+    recaptchaQuote = grecaptcha.render('recaptcha-quote', {
+        'sitekey': '6LcLYlQrAAAAAB4FNu3zvmG9Y9a7zCQoXpRgaEBV'
+    });
+}
+
+</script>
+
+
 
 
                     <!-- <script>async function handleSubmit(event) {
@@ -2099,7 +2118,7 @@ function resetFormState() {
                                         action="https://script.google.com/macros/s/AKfycbyp0VH-0wpYn6uip2eJq34iY_dy1iq74ESjjnCiB2NKAmzUkN7AYXjRRqLMwKU3-PYJWQ/exec"
                                         method="post" target="hidden_iframe"
                                         onsubmit="window.submitted = true; return validateForm1();"> -->
-                                        <form id="quoteForm" onsubmit="return handleQuoteSubmit(event)">
+                                    <form id="quoteForm" onsubmit="return handleQuoteSubmit(event)">
                                         <div class="w3-section1">
                                             <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
                                                 <div class="w3-section">
@@ -2263,115 +2282,118 @@ function resetFormState() {
   <div class="g-recaptcha" data-sitekey="6LeKT1UrAAAAAETU7mbRso_5yC7hXnEdL324Omu5"></div>
 </div> -->
 
- <!-- reCAPTCHA widget -->
-                                            <!-- <div class="w3-section">
+                                        <!-- reCAPTCHA widget -->
+                                        <!-- <div class="w3-section">
                                                  <div class="g-recaptcha"
                                                     data-sitekey="6LeKT1UrAAAAAETU7mbRso_5yC7hXnEdL324Omu5"></div>
                                             </div> -->
+<!-- QUOTE FORM -->
+<div id="recaptcha-quote" class="w3-section"></div>
 
-                                            <div class="w3-section">
-                                                <button id="cta-close-btn" class="w3-black w3-block w3-button w3-margin-bottom" type="submit">Request Quote</button>
-                                            </div>
-                                            <div class="w3-section">
-                                                <button type="button" class="popup-close w3-black w3-block w3-button w3-margin-bottom" id="close-btn1">Close</button>
-                                            </div>
-                                        </form></div>
-                                    
-                                </div>
+                                        <div class="w3-section">
+                                            <button id="cta-close-btn" class="w3-black w3-block w3-button w3-margin-bottom" type="submit">Request Quote</button>
+                                        </div>
+                                        <div class="w3-section">
+                                            <button type="button" class="popup-close w3-black w3-block w3-button w3-margin-bottom" id="close-btn1">Close</button>
+                                        </div>
+                                </form></div>
+                                
                             </div>
                         </div>
-                    </main></div>
+                    </div>
+            </main></div>
 
-                    <!-- Google Map Location -->
+            <!-- Google Map Location -->
 
-                    <app-footer _ngcontent-sc314="" class="ng-tns-c314-2" _nghost-sc312="">
-                        <footer _ngcontent-sc312="">
-                            <!-- <div _ngcontent-sc312="" class="line"></div> -->
-                            <div _ngcontent-sc312="" class="content">
-                                <div _ngcontent-sc312="" class="">
-                                    <div _ngcontent-sc312="" class="pt-3">
-                                        <a href="/index.html">
-                                            <img src="/ETA-footer-logored.6a8561a5.png" alt="ETA - Products and Services"></a>
-                                        <!-- <h4 _ngcontent-sc312="" class="archivo-e_bold white">ETA</h4> -->
-                                    </div>
-                                </div>
-                                <br _ngcontent-sc312="">
-                                <br _ngcontent-sc312="">
-                                <div _ngcontent-sc312="" class="grid font-poppins tracking-wide">
-                                    <div _ngcontent-sc312="" class="course-about_subheading">
-                                        <a class="font-poppins tracking-wide" _ngcontent-sc312="" href="/index.html">ETA</a>
-                                        <a class="font-poppins tracking-wide" _ngcontent-sc312="" href="/services.html">Products</a>
-                                        <a class="font-poppins tracking-wide" _ngcontent-sc312="" href="/about.html">About</a>
-                                        <a class="font-poppins tracking-wide" _ngcontent-sc312="" href="/contact.html">Contact</a>
-                                        <a class="font-poppins tracking-wide" _ngcontent-sc312="" href="/sitemap.xml">Site Map</a>
-                                    </div>
-                                    <div _ngcontent-sc312="" class="course-about_subheading">
-                                        <a class="font-poppins tracking-wide" _ngcontent-sc312="" routerlinkactive="router-link-active" title="ETA Introduction" href="/introduction.html">Introduction</a>
-                                        <a class="font-poppins tracking-wide" _ngcontent-sc312="" routerlinkactive="router-link-active" title="ETA Mission" href="/mission.html">Mission</a>
-                                        <a class="font-poppins tracking-wide" _ngcontent-sc312="" routerlinkactive="router-link-active" title="Leggi la Privacy Policy" href="/vision.html">Vision</a>
-                                        <a class="font-poppins tracking-wide" _ngcontent-sc312="" routerlinkactive="router-link-active" title="Leggi la Privacy Policy" href="/certifications.html">Certifications</a>
+            <app-footer _ngcontent-sc314="" class="ng-tns-c314-2" _nghost-sc312="">
+                <footer _ngcontent-sc312="">
+                    <!-- <div _ngcontent-sc312="" class="line"></div> -->
+                    <div _ngcontent-sc312="" class="content">
+                        <div _ngcontent-sc312="" class="">
+                            <div _ngcontent-sc312="" class="pt-3">
+                                <a href="/index.html">
+                                    <img src="/ETA-footer-logored.6a8561a5.png" alt="ETA - Products and Services"></a>
+                                <!-- <h4 _ngcontent-sc312="" class="archivo-e_bold white">ETA</h4> -->
+                            </div>
+                        </div>
+                        <br _ngcontent-sc312="">
+                        <br _ngcontent-sc312="">
+                        <div _ngcontent-sc312="" class="grid font-poppins tracking-wide">
+                            <div _ngcontent-sc312="" class="course-about_subheading">
+                                <a class="font-poppins tracking-wide" _ngcontent-sc312="" href="/index.html">ETA</a>
+                                <a class="font-poppins tracking-wide" _ngcontent-sc312="" href="/services.html">Products</a>
+                                <a class="font-poppins tracking-wide" _ngcontent-sc312="" href="/about.html">About</a>
+                                <a class="font-poppins tracking-wide" _ngcontent-sc312="" href="/contact.html">Contact</a>
+                                <a class="font-poppins tracking-wide" _ngcontent-sc312="" href="/sitemap.xml">Site
+                                    Map</a>
+                            </div>
+                            <div _ngcontent-sc312="" class="course-about_subheading">
+                                <a class="font-poppins tracking-wide" _ngcontent-sc312="" routerlinkactive="router-link-active" title="ETA Introduction" href="/introduction.html">Introduction</a>
+                                <a class="font-poppins tracking-wide" _ngcontent-sc312="" routerlinkactive="router-link-active" title="ETA Mission" href="/mission.html">Mission</a>
+                                <a class="font-poppins tracking-wide" _ngcontent-sc312="" routerlinkactive="router-link-active" title="Leggi la Privacy Policy" href="/vision.html">Vision</a>
+                                <a class="font-poppins tracking-wide" _ngcontent-sc312="" routerlinkactive="router-link-active" title="Leggi la Privacy Policy" href="/certifications.html">Certifications</a>
 
-                                    </div>
-                                    <div _ngcontent-sc312="" class="course-about_subheading hidden md:block">
-                                        <a class="font-poppins tracking-wide" _ngcontent-sc312="" href="/installation.html">Elevator/Escalator installation</a>
-                                        <a class="font-poppins tracking-wide" _ngcontent-sc312="" href="/modernization.html">Modernization</a>
-                                        <a class="font-poppins tracking-wide" _ngcontent-sc312="" href="/maintenance.html">Maintenance<br> & Repairs</a>
-                                        <!-- <a _ngcontent-sc312="" href="/#enroll-section">Site Map</a> -->
-                                    </div>
-                                    <div _ngcontent-sc312="" class="course-about_subheading hidden md:block">
-                                        <a class="font-poppins tracking-wide" _ngcontent-sc312="" routerlinkactive="router-link-active" title="Passenger Elevator" href="/services.html#pass-ele">Passenger
-                                            Elevator</a>
-                                        <a class="font-poppins tracking-wide" _ngcontent-sc312="" routerlinkactive="router-link-active" title="Home Elevator" href="/services.html#home-ele">Home Elevator</a>
-                                        <a class="font-poppins tracking-wide" _ngcontent-sc312="" routerlinkactive="router-link-active" title="Freight Elevator" href="/services.html#frei-ele">Freight
-                                            Elevator</a>
-                                        <a class="font-poppins tracking-wide" _ngcontent-sc312="" routerlinkactive="router-link-active" title=">Hospital Elevator" href="/services.html#hos-ele">Hospital
-                                            Elevator</a>
-                                        <a class="font-poppins tracking-wide" _ngcontent-sc312="" routerlinkactive="router-link-active" title="Panoramic Elevator" href="/services.html#pano-ele">Panoramic
-                                            Elevator</a>
-                                        <a class="font-poppins tracking-wide" _ngcontent-sc312="" routerlinkactive="router-link-active" title="Repair & Support Service" href="/services.html#24-ele">Repair & Support
-                                            Service</a>
-                                    </div>
-                                </div>
                             </div>
-                            <div _ngcontent-sc312="grid">
-                                <p _ngcontent-sc312="" class="white font-poppins tracking-wide">
-                                    Abu Dhabi UAE
-                                </p>
+                            <div _ngcontent-sc312="" class="course-about_subheading hidden md:block">
+                                <a class="font-poppins tracking-wide" _ngcontent-sc312="" href="/installation.html">Elevator/Escalator installation</a>
+                                <a class="font-poppins tracking-wide" _ngcontent-sc312="" href="/modernization.html">Modernization</a>
+                                <a class="font-poppins tracking-wide" _ngcontent-sc312="" href="/maintenance.html">Maintenance<br> & Repairs</a>
+                                <!-- <a _ngcontent-sc312="" href="/#enroll-section">Site Map</a> -->
                             </div>
-                            <div _ngcontent-sc312="" class="subfooter">
-                                <div _ngcontent-sc312="">
-                                    <p class="pp font-poppins tracking-wide text-white/80" _ngcontent-sc312="">
-                                        Energy Technical Associates - All rights reserved | Powered by ETA
-                                        <br> <a class="font-poppins tracking-wide" _ngcontent-sc312="" href="https://www.linkedin.com/company/energy-technical-associates" target="_blank" title="Energy Technical Associates Linkedin">
-                                            <b _ngcontent-sc312="">LinkedIn </b>
-                                        </a>
-                                        -
-                                        <a class="font-poppins tracking-wide" _ngcontent-sc312="" href="https://www.facebook.com/people/ETA-Energy-Technical-Associates/100086115472677/" target="_blank" title="Energy Technical Associates Facebook">
-                                            <b _ngcontent-sc312="">Facebook </b>
-                                        </a>
-                                        --
-                                        <a class="text-white/80 font-poppins tracking-wide" href="javascript:void(0);" onclick="renewCookieConsent()">Renew or change
-                                            your cookie consent</a>
-                                    </p>
-                                </div>
-                                <div _ngcontent-sc312="">
-                                    <p _ngcontent-sc312="">
-                                        <a class="font-poppins tracking-wide" _ngcontent-sc312="" routerlinkactive="router-link-active" title="Leggi la Privacy Policy" href="https://www.freeprivacypolicy.com/live/0515614a-585e-496f-8b4d-63760c0666dd">privacy
-                                        </a>
-                                        - <a class="font-poppins tracking-wide" _ngcontent-sc312="" routerlinkactive="router-link-active" title="Leggi la Cookie Policy" href="https://www.freeprivacypolicy.com/live/40b052c2-2b44-431d-877f-c6045a7769c0">cookie
-                                        </a><br>
-                                        <a class="text-white/80 font-poppins tracking-wide" href="https://www.flaticon.com/free-icons/gmail" title="gmail icons"> Images
-                                            are
-                                            by Pixel
-                                            perfect - Flaticon</a>
-                                    </p>
-                                </div>
+                            <div _ngcontent-sc312="" class="course-about_subheading hidden md:block">
+                                <a class="font-poppins tracking-wide" _ngcontent-sc312="" routerlinkactive="router-link-active" title="Passenger Elevator" href="/services.html#pass-ele">Passenger
+                                    Elevator</a>
+                                <a class="font-poppins tracking-wide" _ngcontent-sc312="" routerlinkactive="router-link-active" title="Home Elevator" href="/services.html#home-ele">Home Elevator</a>
+                                <a class="font-poppins tracking-wide" _ngcontent-sc312="" routerlinkactive="router-link-active" title="Freight Elevator" href="/services.html#frei-ele">Freight
+                                    Elevator</a>
+                                <a class="font-poppins tracking-wide" _ngcontent-sc312="" routerlinkactive="router-link-active" title=">Hospital Elevator" href="/services.html#hos-ele">Hospital
+                                    Elevator</a>
+                                <a class="font-poppins tracking-wide" _ngcontent-sc312="" routerlinkactive="router-link-active" title="Panoramic Elevator" href="/services.html#pano-ele">Panoramic
+                                    Elevator</a>
+                                <a class="font-poppins tracking-wide" _ngcontent-sc312="" routerlinkactive="router-link-active" title="Repair & Support Service" href="/services.html#24-ele">Repair & Support
+                                    Service</a>
                             </div>
-                        </footer>
-                    </app-footer>
-            </div>
-            
+                        </div>
+                    </div>
+                    <div _ngcontent-sc312="grid">
+                        <p _ngcontent-sc312="" class="white font-poppins tracking-wide">
+                            Abu Dhabi UAE
+                        </p>
+                    </div>
+                    <div _ngcontent-sc312="" class="subfooter">
+                        <div _ngcontent-sc312="">
+                            <p class="pp font-poppins tracking-wide text-white/80" _ngcontent-sc312="">
+                                Energy Technical Associates - All rights reserved | Powered by ETA
+                                <br> <a class="font-poppins tracking-wide" _ngcontent-sc312="" href="https://www.linkedin.com/company/energy-technical-associates" target="_blank" title="Energy Technical Associates Linkedin">
+                                    <b _ngcontent-sc312="">LinkedIn </b>
+                                </a>
+                                -
+                                <a class="font-poppins tracking-wide" _ngcontent-sc312="" href="https://www.facebook.com/people/ETA-Energy-Technical-Associates/100086115472677/" target="_blank" title="Energy Technical Associates Facebook">
+                                    <b _ngcontent-sc312="">Facebook </b>
+                                </a>
+                                --
+                                <a class="text-white/80 font-poppins tracking-wide" href="javascript:void(0);" onclick="renewCookieConsent()">Renew or change
+                                    your cookie consent</a>
+                            </p>
+                        </div>
+                        <div _ngcontent-sc312="">
+                            <p _ngcontent-sc312="">
+                                <a class="font-poppins tracking-wide" _ngcontent-sc312="" routerlinkactive="router-link-active" title="Leggi la Privacy Policy" href="https://www.freeprivacypolicy.com/live/0515614a-585e-496f-8b4d-63760c0666dd">privacy
+                                </a>
+                                - <a class="font-poppins tracking-wide" _ngcontent-sc312="" routerlinkactive="router-link-active" title="Leggi la Cookie Policy" href="https://www.freeprivacypolicy.com/live/40b052c2-2b44-431d-877f-c6045a7769c0">cookie
+                                </a><br>
+                                <a class="text-white/80 font-poppins tracking-wide" href="https://www.flaticon.com/free-icons/gmail" title="gmail icons"> Images
+                                    are
+                                    by Pixel
+                                    perfect - Flaticon</a>
+                            </p>
+                        </div>
+                    </div>
+                </footer>
+            </app-footer>
         </div>
+        
+    </div>
     
     
 
@@ -2492,7 +2514,9 @@ function resetFormState() {
     <script type="module" src="/index.69a7521c.js"></script>
     <script src="/index.63e4f679.js"></script>
     <!-- Load reCAPTCHA JS -->
-    <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+     <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async="" defer=""></script>
+
 
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
     <script type="module" src="/index.be4c761a.js"></script>
