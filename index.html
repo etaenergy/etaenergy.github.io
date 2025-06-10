@@ -1930,14 +1930,18 @@ searchInput.addEventListener("input", function() {
     document.getElementById('thank-message').style.display = 'none';
     document.getElementById('subb').style.display = 'block';
     document.getElementById('myForm').style.display = 'block';
-    document.getElementById('contbtns').style.display = 'block';
+    // Apply grid layout to contbtns
+    const contbtns = document.getElementById('contbtns');
+    contbtns.style.display = 'grid';
+    contbtns.style.gridTemplateColumns = '1fr 1fr';
+    contbtns.style.gap = '1rem';
     // Clear session flag
     sessionStorage.removeItem('formSubmitted');
 }
 
 </script>
 
-<style>#loader {
+                    <style>#loader {
   border: 4px solid #f3f3f3;
   border-top-color: #3498db;
   border-radius: 50%;
@@ -2005,7 +2009,7 @@ searchInput.addEventListener("input", function() {
                                             </div> -->
                                             <!-- CONTACT FORM -->
                                             <div id="recaptcha-contact" class="w3-section"></div>
-<div id="loader" style="display: none"></div>
+                                            <div id="loader" style="display: none"></div>
 
                                             <div id="contbtns" class="grid grid-cols-2 gap-4">
 
@@ -2131,7 +2135,7 @@ function resetFormState() {
                                         method="post" target="hidden_iframe"
                                         onsubmit="window.submitted = true; return validateForm1();"> -->
                                     <!-- <form id="quoteForm" onsubmit="return handleQuoteSubmit(event)"> -->
-                                        <form id="quoteForm" onsubmit="return handleQuoteSubmit(event)">
+                                    <form id="quoteForm" onsubmit="return handleQuoteSubmit(event)">
                                         <div class="w3-section1">
                                             <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
                                                 <div class="w3-section">
