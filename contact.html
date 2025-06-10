@@ -116,8 +116,8 @@ gtag('config', 'G-8W57GSM6DL');
 </head>
 
 <body class="global-body bg-black">
-    <script src="/index.3b82c0f3.js"></script>
-    <script type="module" src="/index.45376efd.js"></script>
+    <script src="/index.d7ee8967.js"></script>
+    <script type="module" src="/services.45376efd.js"></script>
     <!-- floating button -->
     <!-- Take it away -->
     <button class="fab opacity-1 hover:bg-gradient-to-black">
@@ -683,6 +683,11 @@ gtag('config', 'G-8W57GSM6DL');
     document.getElementById('thank-message').style.display = 'none';
     document.getElementById('subb').style.display = 'block';
     document.getElementById('myForm').style.display = 'block';
+    // Apply grid layout to contbtns
+    const contbtns = document.getElementById('contbtns');
+    contbtns.style.display = 'grid';
+    contbtns.style.gridTemplateColumns = '1fr 1fr';
+    contbtns.style.gap = '1rem';
     // Clear session flag
     sessionStorage.removeItem('formSubmitted');
 }
@@ -733,9 +738,10 @@ gtag('config', 'G-8W57GSM6DL');
                             <!-- <div class="w3-section">
                                 <div class="g-recaptcha" data-sitekey="6LcLYlQrAAAAAB4FNu3zvmG9Y9a7zCQoXpRgaEBV"></div>
                             </div> -->
-                            <div id="recaptcha-contact" class="w3-section"></div>
+                        <div id="recaptcha-contact" class="w3-section"></div>
+                                <div id="loader" style="display: none"></div>
 
-                            <div class="grid grid-cols-2 gap-4">
+                                <div id="contbtns" class="grid grid-cols-2 gap-4">
 
                                 <div id="submittt" class="w3-section">
                                     <button id="cta-close-btn" class="w3-black w3-block w3-button w3-margin-bottom" type="submit">SUBMIT</button>
