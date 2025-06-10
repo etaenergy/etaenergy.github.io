@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="/index.765038d8.css">
     <link rel="stylesheet" href="/index.dc64aefb.css">
     <link rel="stylesheet" href="/index.07da8792.css">
-    <link rel="stylesheet" href="/index.226a3085.css">
+    <link rel="stylesheet" href="/index.db5a1eec.css">
     <link rel="stylesheet" href="/index.56d4319e.css">
     <link rel="stylesheet" href="/index.a33ea1e7.css">
     <link rel="stylesheet" href="/index.70863bd2.css">
@@ -115,8 +115,8 @@ gtag('config', 'G-8W57GSM6DL');
 </head>
 
 <body class="global-body bg-black">
-    <script type="module" src="/index.e1c00de4.js"></script>
-    <script type="module" src="/index.0ce1636f.js"></script>
+    <script src="/index.3b82c0f3.js"></script>
+    <script type="module" src="/index.fcbed03b.js"></script>
     <!-- floating button -->
     <!-- Take it away -->
     <button class="fab opacity-1 hover:bg-gradient-to-black">
@@ -638,14 +638,14 @@ gtag('config', 'G-8W57GSM6DL');
  
  
                      <!-- jas popup -->
+                 <!-- jas popup -->
                     <div id="popup-container" class="popup-container" data-lenis-prevent="">
-                        <!-- <div class="popup bg-[radial-gradient(at_center,_#ff6a6a,_#ffffff)]" id="popupc"> -->
                         <div class="popup bg-white" id="popupc">
-                            <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
-                                <div class="w3-content" style="max-width: 600px">
-
-
-                                    <div class="p-4 mb-2"><h4 id="subb" class="w3-center text-red-500"><b>Let's Connect</b></h4></div>
+                            <div class="w3-container w3-light-grey w3-padding-32" id="contact">
+                                <div class="" style="max-width: 600px">
+                                    <div class="p-2 mb-2">
+                                        <h4 id="subb" class="w3-center text-red-500"><b>Let's Connect</b></h4>
+                                    </div>
                                     <div class="flex flex-col">
                                         <h4 id="thank-message" class="thnk text-center text-black-700 p-6 text-lg font-medium hidden flex flex-col items-center">
                                             <b>Thanks for reaching out! We’ve got your message and will get back to you
@@ -655,20 +655,16 @@ gtag('config', 'G-8W57GSM6DL');
                                         </h4>
                                     </div>
 
+                                    <!-- iframe removed -->
 
-                                    <!-- <button onclick="document.getElementById('popup-container').style.display='none'"
-                                        class="mt-4 px-4 py-2 bg-black text-white rounded-md hover:bg-gray-800 transition">Close</button> -->
-
-
-                                    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(sessionStorage.getItem('formSubmitted') === 'true') { showThankYouMessage(); }">
-                                    </iframe>
-
-                                    <form id="myForm" action="https://script.google.com/macros/s/AKfycbyGXgegFWKD0aetPK10Hl_MBSHSGy7bPSKVjJYpWkIjesTwIkhh3PD4k1vMbPci5N8QeA/exec" method="post" target="hidden_iframe" onsubmit="return validateForm();">
-                                        <div class="w3-section">
+                                    <form id="myForm" onsubmit="return handleSubmit(event);">
+                                        <div class="">
                                             <div id="namee" class="w3-section">
                                                 <label>Name</label>
                                                 <input class="w3-border w3-input" type="text" placeholder="Your Name" id="name" name="your-name" required="">
                                             </div>
+                                            <input type="text" name="honeypot" style="display: none">
+
                                             <div id="emaill" class="w3-section">
                                                 <label>Email</label>
                                                 <input class="w3-border w3-input" type="email" placeholder="name@example.com" id="email" name="your-email" required="">
@@ -679,9 +675,15 @@ gtag('config', 'G-8W57GSM6DL');
                                             </div>
                                             <div id="message" class="w3-section">
                                                 <label>Message</label>
+                                                <!-- <textarea class="w3-border w3-input" id="message" placeholder="Feel free to message!" name="your-message" rows="4"></textarea> -->
                                                 <textarea class="w3-border w3-input" id="message" type="text" placeholder="Feel free to message!" name="your-message" rows="4"></textarea>
                                             </div>
+                                              <!-- reCAPTCHA widget -->
+                                                <!-- <div class="w3-section">
+  <div class="g-recaptcha" data-sitekey="6LcLYlQrAAAAAB4FNu3zvmG9Y9a7zCQoXpRgaEBV"></div></div> -->
+<div id="recaptcha-contact" class="w3-section"></div>
                                             <div class="grid grid-cols-2 gap-4">
+                                                
                                                 <div id="submittt" class="w3-section">
                                                     <button id="cta-close-btn" class="w3-black w3-block w3-button w3-margin-bottom" type="submit">SUBMIT</button>
                                                 </div>
@@ -689,19 +691,15 @@ gtag('config', 'G-8W57GSM6DL');
                                                     <button type="button" class="popup-close w3-black w3-block w3-button w3-margin-bottom" id="close-btn">Close</button>
                                                 </div>
                                             </div>
-
                                         </div>
-
-
                                     </form>
 
-
                                 </div>
-
-
                             </div>
                         </div>
                     </div>
+
+                     
 
                     <style>.popup-container1 {
   z-index: 1000;
@@ -735,6 +733,7 @@ gtag('config', 'G-8W57GSM6DL');
 </script>
 
                          <!-- jas quote popup -->
+            <!-- jas quote popup -->
                     <div id="popup-container1" class="popup-container1" data-lenis-prevent="">
                         <!-- <div class="popup bg-[radial-gradient(at_center,_#ff6a6a,_#ffffff)]" id="popupc"> -->
                         <div class="popup bg-white" id="popupc">
@@ -748,9 +747,14 @@ gtag('config', 'G-8W57GSM6DL');
                                             for requesting a quote! Our team will review your request and get back to
                                             you shortly.</b></h4>
 
-                                    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(window.submitted) { showThankYouMessage(); }"></iframe>
+                                    <!-- <iframe name="hidden_iframe" id="hidden_iframe" style="display:none"
+                                        onload="if(window.submitted) { showThankYouMessage(); }"></iframe> -->
 
-                                    <form id="quoteForm" action="https://script.google.com/macros/s/AKfycbyp0VH-0wpYn6uip2eJq34iY_dy1iq74ESjjnCiB2NKAmzUkN7AYXjRRqLMwKU3-PYJWQ/exec" method="post" target="hidden_iframe" onsubmit="window.submitted = true; return validateForm1();">
+                                    <!-- <form id="quoteForm"
+                                        action="https://script.google.com/macros/s/AKfycbyp0VH-0wpYn6uip2eJq34iY_dy1iq74ESjjnCiB2NKAmzUkN7AYXjRRqLMwKU3-PYJWQ/exec"
+                                        method="post" target="hidden_iframe"
+                                        onsubmit="window.submitted = true; return validateForm1();"> -->
+                                        <form id="quoteForm" onsubmit="return handleQuoteSubmit(event)">
                                         <div class="w3-section1">
                                             <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
                                                 <div class="w3-section">
@@ -832,7 +836,7 @@ gtag('config', 'G-8W57GSM6DL');
                                                     </select>
                                                 </div>
                                                 <label for="modernization-scope">Scope of Modernization</label>
-                                                <input class="w3-border w3-input" type="text" id="modernization-scope" name="modernization-scope">
+                                                <input class="w3-border w3-input w3-section1" type="text" id="modernization-scope" name="modernization-scope">
                                                 <div id="budget-section2" class="w3-section1">
                                                     <label for="budget">Modernization Budget</label>
                                                     <select class="w3-border w3-input" id="budget2" name="modbudget">
@@ -903,20 +907,48 @@ gtag('config', 'G-8W57GSM6DL');
 
                                         </div>
 
-                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                        <!-- <div class="w3-section">
+                                            <div class="g-recaptcha"
+                                                data-sitekey="6LcLYlQrAAAAAB4FNu3zvmG9Y9a7zCQoXpRgaEBV"></div>
+                                            <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+                                        </div> -->
+
+                                        <!-- reCAPTCHA widget -->
+                                        <!-- <div class="w3-section">
+  <div class="g-recaptcha" data-sitekey="6LeKT1UrAAAAAETU7mbRso_5yC7hXnEdL324Omu5"></div>
+</div> -->
+
+ <!-- reCAPTCHA widget -->
+                                            <!-- <div class="w3-section">
+                                                 <div class="g-recaptcha"
+                                                    data-sitekey="6LeKT1UrAAAAAETU7mbRso_5yC7hXnEdL324Omu5"></div>
+                                            </div> -->
+<div id="recaptcha-quote" class="w3-section"></div>
+
                                             <div class="w3-section">
                                                 <button id="cta-close-btn" class="w3-black w3-block w3-button w3-margin-bottom" type="submit">Request Quote</button>
                                             </div>
                                             <div class="w3-section">
                                                 <button type="button" class="popup-close w3-black w3-block w3-button w3-margin-bottom" id="close-btn1">Close</button>
                                             </div>
-                                        </div>
-                                    </form>
+                                        </form></div>
+                                    
                                 </div>
                             </div>
                         </div>
-                    </div>
+  <script>var recaptchaContact;
+var recaptchaQuote;
+function onloadCallback() {
+    recaptchaContact = grecaptcha.render('recaptcha-contact', {
+        'sitekey': '6LcLYlQrAAAAAB4FNu3zvmG9Y9a7zCQoXpRgaEBV'
+    });
+    recaptchaQuote = grecaptcha.render('recaptcha-quote', {
+        'sitekey': '6LcLYlQrAAAAAB4FNu3zvmG9Y9a7zCQoXpRgaEBV'
+    });
+}
 
+</script>
+                    
 <app-footer _ngcontent-sc314="" class="ng-tns-c314-2" _nghost-sc312="">
                         <footer _ngcontent-sc312="">
                             <!-- <div _ngcontent-sc312="" class="line"></div> -->
@@ -1540,6 +1572,10 @@ Webflow.push(function() {
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
     <script type="module" src="/index.be4c761a.js"></script>
     <script type="module" src="/installation.f7f9a399.js"></script>
+        <script src="/index.72e34e94.js"></script>
+    <!-- Load reCAPTCHA JS -->
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async="" defer=""></script>
+    
     <script>let lastScrollTop = 0;
 const navbar = document.getElementById("navbar");
 window.addEventListener("scroll", ()=>{
