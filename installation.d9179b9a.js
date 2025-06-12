@@ -1,1 +1,69 @@
-const a15_0x26268c=a15_0x55f5;function a15_0x5032(){const _0x3a3f9b=['cHKJs','smooth','click','OIhcw','createElement','load','1533411zLXnvI','querySelector','addEventListener','27760725VJrkba','10092593VjJMik','scrollIntoView','span','511204rPifJo','8vnfWsA','active','EWPPw','pMoRt','ANjos','hash','952kHoEQC','6040AqqiYC','Yykbf','fefLP','appendChild','8420820IzwRfX','toggle','2934858brVcsf'];a15_0x5032=function(){return _0x3a3f9b;};return a15_0x5032();}function a15_0x55f5(_0x3bc9ab,_0x324f8c){const _0x503264=a15_0x5032();return a15_0x55f5=function(_0x55f546,_0xfaf6b7){_0x55f546=_0x55f546-0x18f;let _0x47cd72=_0x503264[_0x55f546];return _0x47cd72;},a15_0x55f5(_0x3bc9ab,_0x324f8c);}(function(_0x38e598,_0x2cb702){const _0x47f702=a15_0x55f5,_0x143ffe=_0x38e598();while(!![]){try{const _0x11562e=-parseInt(_0x47f702(0x19f))/0x1+-parseInt(_0x47f702(0x191))/0x2+-parseInt(_0x47f702(0x198))/0x3+parseInt(_0x47f702(0x1a6))/0x4*(parseInt(_0x47f702(0x1a7))/0x5)+-parseInt(_0x47f702(0x18f))/0x6+parseInt(_0x47f702(0x19c))/0x7*(parseInt(_0x47f702(0x1a0))/0x8)+parseInt(_0x47f702(0x19b))/0x9;if(_0x11562e===_0x2cb702)break;else _0x143ffe['push'](_0x143ffe['shift']());}catch(_0x2dc759){_0x143ffe['push'](_0x143ffe['shift']());}}}(a15_0x5032,0xe0c0c),document['addEventListener']('DOMContentLoaded',function(){const _0x395656=a15_0x55f5,_0x3b4921={'ptFqt':_0x395656(0x1a1),'fefLP':'.nav_menu-lottie-hamburgerr','ANjos':'span','OIhcw':_0x395656(0x194)},_0x4d2e8c=document[_0x395656(0x199)](_0x3b4921[_0x395656(0x1a9)]);if(_0x4d2e8c&&!_0x4d2e8c[_0x395656(0x199)](_0x395656(0x19e))){const _0x518d32=document[_0x395656(0x196)](_0x3b4921[_0x395656(0x1a4)]);_0x4d2e8c[_0x395656(0x1aa)](_0x518d32);}_0x4d2e8c[_0x395656(0x19a)](_0x3b4921[_0x395656(0x195)],function(){const _0x926103=_0x395656;_0x4d2e8c['classList'][_0x926103(0x190)](_0x3b4921['ptFqt']);});}),document[a15_0x26268c(0x19a)]('DOMContentLoaded',()=>{const _0x48f92c=a15_0x26268c,_0x466d74={'cHKJs':_0x48f92c(0x193),'Yykbf':function(_0x1e31c6,_0x27b7e7,_0x4a2526){return _0x1e31c6(_0x27b7e7,_0x4a2526);},'EWPPw':_0x48f92c(0x197)};window[_0x48f92c(0x19a)](_0x466d74[_0x48f92c(0x1a2)],()=>{const _0x3cf87c=_0x48f92c,_0x30ad89={'pMoRt':_0x466d74[_0x3cf87c(0x192)]},_0x59ead7=window['location'][_0x3cf87c(0x1a5)];if(_0x59ead7)_0x466d74[_0x3cf87c(0x1a8)](setTimeout,()=>{const _0x2ac36f=_0x3cf87c,_0x27b83c=document[_0x2ac36f(0x199)](_0x59ead7);if(_0x27b83c)_0x27b83c[_0x2ac36f(0x19d)]({'behavior':_0x30ad89[_0x2ac36f(0x1a3)]});},0x1f4);});}));
+// document.addEventListener("DOMContentLoaded", function () {
+//   console.log("Back button script loaded");
+//   const backBtn = document.querySelector("[data-back-btn]");
+//   console.log("Back button found:", backBtn);
+//   if (backBtn) {
+//     backBtn.addEventListener("click", function (event) {
+//       event.preventDefault();
+//       document.body.classList.add("fade-out");
+//       setTimeout(() => {
+//         history.back();
+//       }, 500); // Match your CSS transition
+//     });
+//   }
+// });
+// document.addEventListener("DOMContentLoaded", () => {
+//   console.log("Back button script loaded");
+//   const backBtn = document.querySelector("[data-back-btn]");
+//   console.log("Back button found:", backBtn);
+//   if (backBtn) {
+//     backBtn.addEventListener("click", function (event) {
+//       event.preventDefault();
+//       // Apply fade-out transition
+//       // document.body.classList.add("fade-out");
+//       // Delay going back until after transition
+//       setTimeout(() => {
+//         history.back();
+//       }, 500); // Match with CSS transition duration
+//     });
+//   }
+//   // // Ensure fade-out is removed when page is shown (from bfcache or reload)
+//   // window.addEventListener("pageshow", function (event) {
+//   //   console.log("Page show, persisted:", event.persisted);
+//   //   document.body.classList.remove("fade-out");
+//   //   // Optional: fix blank page in iOS/Safari by forcing redraw
+//   //   if (event.persisted) {
+//   //     document.body.style.display = "none";
+//   //     document.body.offsetHeight; // force reflow
+//   //     document.body.style.display = "";
+//   //   }
+//   // });
+//   // // Also remove fade-out in normal load
+//   // window.addEventListener("load", () => {
+//   //   document.body.classList.remove("fade-out");
+//   // });
+// });
+document.addEventListener("DOMContentLoaded", function() {
+    const burger = document.querySelector(".nav_menu-lottie-hamburgerr");
+    if (burger && !burger.querySelector("span")) {
+        const span = document.createElement("span");
+        burger.appendChild(span);
+    }
+    burger.addEventListener("click", function() {
+        burger.classList.toggle("active");
+    });
+});
+document.addEventListener("DOMContentLoaded", ()=>{
+    // Wait until page has fully loaded
+    window.addEventListener("load", ()=>{
+        const hash = window.location.hash;
+        if (hash) // Use timeout to wait for fade-in to complete
+        setTimeout(()=>{
+            const target = document.querySelector(hash);
+            if (target) target.scrollIntoView({
+                behavior: "smooth"
+            });
+        }, 500); // Match this with your fade animation duration
+    });
+});
+

@@ -1,1 +1,138 @@
-function a16_0xa886(){var _0x3a6b27=['48MtzxSg','slideUp','a:not([target=\x27_blank\x27])','preventDefault','7310320NTZwul','zyQFf','BDIqN','VBEJd','fade-out','632084icuihK','2jOlfzg','ewvOu','click','Ifmbm','ReRxM','querySelectorAll','amksV','addEventListener','eWEHg','classList','startsWith','3756YifJyT','maintenance-details','forEach','href','7805457xVsxpO','pageshow','location','modernization-details','4093096JEvSxU','1446dXnqox','jKTTE','change','script.js\x20loaded','lBjPv','body','#modernization','cEYTT','Script\x20loaded','ready','YDUuc','kqqKJ','log','SYRtr','BsCnj','installation-details','includes','#maintenance','30165OuuHCS','6194860YNbeAK','cZRFW','Xpsjv','pduZW','remove','add'];a16_0xa886=function(){return _0x3a6b27;};return a16_0xa886();}var a16_0x2c5964=a16_0x1b85;(function(_0x734cfc,_0x16e0b9){var _0x5ebbe9=a16_0x1b85,_0x1a3c86=_0x734cfc();while(!![]){try{var _0x2dee66=-parseInt(_0x5ebbe9(0xa5))/0x1*(parseInt(_0x5ebbe9(0xa4))/0x2)+parseInt(_0x5ebbe9(0xb9))/0x3*(-parseInt(_0x5ebbe9(0xb0))/0x4)+-parseInt(_0x5ebbe9(0xcb))/0x5*(-parseInt(_0x5ebbe9(0xd2))/0x6)+-parseInt(_0x5ebbe9(0xb8))/0x7+parseInt(_0x5ebbe9(0x9f))/0x8+parseInt(_0x5ebbe9(0xb4))/0x9+parseInt(_0x5ebbe9(0xcc))/0xa;if(_0x2dee66===_0x16e0b9)break;else _0x1a3c86['push'](_0x1a3c86['shift']());}catch(_0x59403c){_0x1a3c86['push'](_0x1a3c86['shift']());}}}(a16_0xa886,0xbe48b));function a16_0x1b85(_0x13f4af,_0x55f0b){var _0xa88613=a16_0xa886();return a16_0x1b85=function(_0x1b85c0,_0x4ef9c3){_0x1b85c0=_0x1b85c0-0x9f;var _0x238a12=_0xa88613[_0x1b85c0];return _0x238a12;},a16_0x1b85(_0x13f4af,_0x55f0b);}var $8b90c3b863de201b$exports={};console[a16_0x2c5964(0xc5)](a16_0x2c5964(0xbc)),$(document)[a16_0x2c5964(0xc2)](function(){var _0x5c92a4=a16_0x2c5964,_0xbbc73e={'cEYTT':':checked','Xpsjv':function(_0x34bf6f,_0x300fa4){return _0x34bf6f(_0x300fa4);},'ReRxM':function(_0xb81208,_0x2d87e0){return _0xb81208+_0x2d87e0;},'ewvOu':function(_0x261ef8,_0x4718c2){return _0x261ef8+_0x4718c2;},'amksV':function(_0x2528eb,_0x447af7,_0x1cadfb){return _0x2528eb(_0x447af7,_0x1cadfb);},'BDIqN':_0x5c92a4(0xc8),'cZRFW':_0x5c92a4(0xb7),'tJVee':function(_0x7b8463,_0x2cb7f2,_0x39870b){return _0x7b8463(_0x2cb7f2,_0x39870b);},'pduZW':_0x5c92a4(0xb1),'lBjPv':_0x5c92a4(0xc1),'zyQFf':function(_0x3f56fe,_0x135cef){return _0x3f56fe(_0x135cef);},'VBEJd':'#installation','SYRtr':_0x5c92a4(0xbb),'eWEHg':function(_0x982a60,_0x2fc638){return _0x982a60(_0x2fc638);},'Ifmbm':_0x5c92a4(0xca)};console[_0x5c92a4(0xc5)](_0xbbc73e[_0x5c92a4(0xbd)]);function _0x3f97c3(_0x52db9d,_0x123608){var _0x26e03c=_0x5c92a4;if(_0x123608['is'](_0xbbc73e[_0x26e03c(0xc0)]))_0xbbc73e[_0x26e03c(0xce)]($,_0xbbc73e[_0x26e03c(0xa9)]('#',_0x52db9d))['slideDown']();else _0xbbc73e[_0x26e03c(0xce)]($,_0xbbc73e[_0x26e03c(0xa6)]('#',_0x52db9d))[_0x26e03c(0xd3)]();}_0xbbc73e[_0x5c92a4(0xa0)]($,_0xbbc73e[_0x5c92a4(0xa2)])['on'](_0xbbc73e[_0x5c92a4(0xc6)],function(){var _0x227f77=_0x5c92a4;_0xbbc73e[_0x227f77(0xab)](_0x3f97c3,_0xbbc73e[_0x227f77(0xa1)],_0xbbc73e['Xpsjv']($,this));}),$(_0x5c92a4(0xbf))['on'](_0xbbc73e[_0x5c92a4(0xc6)],function(){var _0x30473c=_0x5c92a4;_0xbbc73e[_0x30473c(0xab)](_0x3f97c3,_0xbbc73e[_0x30473c(0xcd)],$(this));}),_0xbbc73e[_0x5c92a4(0xad)]($,_0xbbc73e[_0x5c92a4(0xa8)])['on'](_0xbbc73e[_0x5c92a4(0xc6)],function(){var _0x50650e=_0x5c92a4;_0xbbc73e['tJVee'](_0x3f97c3,_0xbbc73e[_0x50650e(0xcf)],_0xbbc73e['Xpsjv']($,this));});}),document[a16_0x2c5964(0xac)]('DOMContentLoaded',function(){var _0x27c614=a16_0x2c5964,_0x33ba9d={'kqqKJ':_0x27c614(0xa3),'ZNIkd':function(_0x53689c,_0x33ad83,_0x2c0678){return _0x53689c(_0x33ad83,_0x2c0678);},'BsCnj':_0x27c614(0xa7),'YDUuc':'loaded'};document[_0x27c614(0xbe)][_0x27c614(0xae)][_0x27c614(0xd1)](_0x33ba9d[_0x27c614(0xc3)]),document[_0x27c614(0xaa)](_0x27c614(0xd4))[_0x27c614(0xb2)](_0xe9ccee=>{var _0x1ed481=_0x27c614,_0x41e234={'jKTTE':_0x33ba9d[_0x1ed481(0xc4)],'qSfma':function(_0x4b5cd4,_0x50b3f7,_0x37f18e){return _0x33ba9d['ZNIkd'](_0x4b5cd4,_0x50b3f7,_0x37f18e);}};_0xe9ccee['addEventListener'](_0x33ba9d[_0x1ed481(0xc7)],function(_0x581862){var _0x9f572c=_0x1ed481;this[_0x9f572c(0xb3)][_0x9f572c(0xaf)](window[_0x9f572c(0xb6)]['origin'])&&!this[_0x9f572c(0xb3)][_0x9f572c(0xc9)]('#')&&(_0x581862[_0x9f572c(0xd5)](),document[_0x9f572c(0xbe)][_0x9f572c(0xae)][_0x9f572c(0xd1)](_0x41e234[_0x9f572c(0xba)]),_0x41e234['qSfma'](setTimeout,()=>{var _0x2a4a11=_0x9f572c;window[_0x2a4a11(0xb6)][_0x2a4a11(0xb3)]=this['href'];},0x1f4));});});}),window[a16_0x2c5964(0xac)](a16_0x2c5964(0xb5),function(_0x269227){var _0x2079d5=a16_0x2c5964;document[_0x2079d5(0xbe)]['classList'][_0x2079d5(0xd0)]('fade-out');});
+var $8b90c3b863de201b$exports = {};
+console.log('script.js loaded');
+$(document).ready(function() {
+    console.log('Script loaded');
+    // Function to toggle sections based on checkbox state
+    function toggleServiceSection(sectionId, checkbox) {
+        if (checkbox.is(':checked')) $('#' + sectionId).slideDown(); // Slide down if checked
+        else $('#' + sectionId).slideUp(); // Slide up if unchecked
+    }
+    // Event listeners for the checkboxes
+    $('#installation').on('change', function() {
+        toggleServiceSection('installation-details', $(this));
+    });
+    $('#modernization').on('change', function() {
+        toggleServiceSection('modernization-details', $(this));
+    });
+    $('#maintenance').on('change', function() {
+        toggleServiceSection('maintenance-details', $(this));
+    });
+});
+// workds fine 
+document.addEventListener("DOMContentLoaded", function() {
+    // Fade in when page loads
+    document.body.classList.add("loaded");
+    // Find all links and apply fade-out before navigation
+    document.querySelectorAll("a:not([target='_blank'])").forEach((link)=>{
+        link.addEventListener("click", function(event) {
+            if (this.href.startsWith(window.location.origin) && !this.href.includes("#")) {
+                event.preventDefault(); // Stop default navigation
+                document.body.classList.add("fade-out"); // Start fade-out effect
+                setTimeout(()=>{
+                    window.location.href = this.href; // Navigate after fade-out
+                }, 500); // Match CSS transition time (0.5s)
+            }
+        });
+    });
+});
+// Handle browser Back and Forward buttons, remove fade-out so page is visible
+window.addEventListener("pageshow", function(event) {
+    document.body.classList.remove("fade-out");
+}); // protect
+ // document.addEventListener("contextmenu", (event) => event.preventDefault());
+ // document.addEventListener("keydown", (event) => {
+ //   if (event.ctrlKey && (event.key === "u" || event.key === "s" || event.key === "i" || event.key === "j")) {
+ //     event.preventDefault();
+ //   }
+ // });
+ // document.addEventListener("keydown", function (event) {
+ //     if (
+ //         (event.ctrlKey && event.shiftKey && event.key === "I") ||  // Ctrl + Shift + I
+ //         (event.ctrlKey && event.shiftKey && event.key === "J") ||  // Ctrl + Shift + J
+ //         (event.ctrlKey && event.key === "U") ||  // Ctrl + U (View Page Source)
+ //         (event.key === "F12")  // F12 (Open DevTools)
+ //     ) {
+ //         event.preventDefault();
+ //         alert("DevTools is disabled!");
+ //     }
+ // });
+ // setInterval(() => {
+ //     if (window.outerWidth - window.innerWidth > 200 || window.outerHeight - window.innerHeight > 200) {
+ //         alert("DevTools detected! Closing the page...");
+ //         window.location.href = "about:blank"; // Redirect to an empty page
+ //     }
+ // }, 1000);
+ // (function detectDevTools() {
+ //     const threshold = 160; // Minimum difference to detect DevTools open
+ //     function checkDevTools() {
+ //         if (window.outerWidth - window.innerWidth > threshold || 
+ //             window.outerHeight - window.innerHeight > threshold) {
+ //             alert("DevTools detected! Closing the page...");
+ //             window.location.href = "about:blank"; // Redirect to an empty page
+ //         }
+ //     }
+ //     // Run detection every second
+ //     setInterval(checkDevTools, 1000);
+ //     // Detect resize event (triggers when DevTools opens)
+ //     window.addEventListener("resize", checkDevTools);
+ // })();
+ // setInterval(() => {
+ //     console.clear(); // Keeps clearing console output
+ // }, 100);
+ // // document.body.innerHTML = "";
+ // // setTimeout(() => {
+ // //     document.body.innerHTML = "<h1>Secure Content</h1><p>This content is loaded dynamically.</p>";
+ // // }, 1000);
+ // const obfuscatedCode = "console.log('This code is hidden');";
+ // eval(obfuscatedCode);
+ // (function () {
+ //     let devToolsOpened = false;
+ //     function detectDevTools() {
+ //         const element = new Image();
+ //         Object.defineProperty(element, "id", {
+ //             get: function () {
+ //                 devToolsOpened = true;
+ //                 triggerProtection();
+ //             }
+ //         });
+ //         console.log("%c", element); // Will trigger when console is open
+ //     }
+ //     function detectDebugger() {
+ //         const start = performance.now();
+ //         debugger; // Causes a delay when DevTools is open
+ //         const end = performance.now();
+ //         if (end - start > 100) {
+ //             devToolsOpened = true;
+ //             triggerProtection();
+ //         }
+ //     }
+ //     function triggerProtection() {
+ //         if (devToolsOpened) {
+ //             document.body.innerHTML = "";
+ //             setTimeout(() => {
+ //                 document.body.innerHTML = "<h1>Secure Content</h1><p>Access Restricted.</p>";
+ //             }, 1000);
+ //         }
+ //     }
+ //     function checkOnLoad() {
+ //         setTimeout(() => {
+ //             detectDevTools();
+ //             detectDebugger();
+ //         }, 500); // Delay check to ensure DevTools was already open
+ //     }
+ //     // Run checks on page load and continuously every second
+ //     checkOnLoad();
+ //     setInterval(() => {
+ //         detectDevTools();
+ //         detectDebugger();
+ //     }, 1000);
+ //     // Prevent right-click & common DevTools shortcuts
+ //     document.addEventListener("contextmenu", (e) => e.preventDefault());
+ //     document.addEventListener("keydown", (e) => {
+ //         if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I") || (e.ctrlKey && e.key === "u")) {
+ //             e.preventDefault();
+ //         }
+ //     });
+ // })();
+
+

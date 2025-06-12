@@ -13545,9 +13545,9 @@ html, body {
 .custom-cursor {
   pointer-events: none;
   opacity: 0;
-  mix-blend-mode: difference;
+  mix-blend-mode: exclusion;
   z-index: 9999999;
-  background-color: #fff;
+  background-color: #ffd6d6;
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -13565,7 +13565,7 @@ html, body {
 
 .custom-cursor--link {
   aspect-ratio: auto;
-  border-radius: 10px;
+  border-radius: 50px;
   width: 80px;
   height: 80px;
   transform: translate(-50%, -50%)scale(1)rotate(180deg);
@@ -13577,9 +13577,8 @@ html, body {
 
 .cursor-dot {
   pointer-events: none;
-  mix-blend-mode: difference;
   z-index: 99999999;
-  background-color: #fff;
+  background-color: #ff7171;
   border-radius: 50%;
   width: 8px;
   height: 8px;

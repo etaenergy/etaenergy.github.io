@@ -1,1 +1,39 @@
-var a11_0x4096b2=a11_0x3f42;function a11_0x3f42(_0x2fe798,_0x5cead2){var _0x552bbd=a11_0x552b();return a11_0x3f42=function(_0x3f429e,_0x5e3b55){_0x3f429e=_0x3f429e-0x12f;var _0xc001c4=_0x552bbd[_0x3f429e];return _0xc001c4;},a11_0x3f42(_0x2fe798,_0x5cead2);}(function(_0x15461e,_0x112b6f){var _0x1bf4b8=a11_0x3f42,_0x305037=_0x15461e();while(!![]){try{var _0x47f616=parseInt(_0x1bf4b8(0x144))/0x1+-parseInt(_0x1bf4b8(0x141))/0x2*(parseInt(_0x1bf4b8(0x152))/0x3)+parseInt(_0x1bf4b8(0x138))/0x4+-parseInt(_0x1bf4b8(0x140))/0x5*(parseInt(_0x1bf4b8(0x13c))/0x6)+-parseInt(_0x1bf4b8(0x146))/0x7+parseInt(_0x1bf4b8(0x131))/0x8*(-parseInt(_0x1bf4b8(0x149))/0x9)+-parseInt(_0x1bf4b8(0x153))/0xa*(-parseInt(_0x1bf4b8(0x13f))/0xb);if(_0x47f616===_0x112b6f)break;else _0x305037['push'](_0x305037['shift']());}catch(_0x5cdd7c){_0x305037['push'](_0x305037['shift']());}}}(a11_0x552b,0x701b2));var $590ccd484fbcbae1$exports={};window['addEventListener'](a11_0x4096b2(0x147),function(){var _0x274b88=a11_0x4096b2,_0x21bfc8={'Sfwmr':_0x274b88(0x14b),'VrcZi':'🚫\x20Cookies\x20denied','srjyY':_0x274b88(0x133),'owyYC':'#000','cqLRz':_0x274b88(0x14e),'kNhzr':'classic','xeNsI':'This\x20website\x20uses\x20cookies\x20to\x20improve\x20user\x20experience.','NoEMm':_0x274b88(0x14d),'qccDT':_0x274b88(0x12f),'iIvlp':_0x274b88(0x135)};window['cookieconsent'][_0x274b88(0x137)]({'type':_0x21bfc8[_0x274b88(0x130)],'palette':{'popup':{'background':_0x21bfc8[_0x274b88(0x14a)]},'button':{'background':_0x21bfc8[_0x274b88(0x148)]}},'theme':_0x21bfc8['kNhzr'],'content':{'message':_0x21bfc8[_0x274b88(0x14c)],'allow':'Allow\x20cookies','deny':_0x21bfc8['NoEMm'],'link':_0x21bfc8[_0x274b88(0x145)],'href':_0x21bfc8[_0x274b88(0x154)]},'onInitialise':function(_0x2f1643){var _0x28b620=_0x274b88;if(this[_0x28b620(0x134)]())console[_0x28b620(0x13e)](_0x21bfc8[_0x28b620(0x150)]);else console[_0x28b620(0x13e)](_0x21bfc8[_0x28b620(0x13b)]);}});}),document[a11_0x4096b2(0x13d)](a11_0x4096b2(0x143),function(){var _0xdd725e=a11_0x4096b2,_0x1dd7f7={'RMhdV':_0xdd725e(0x14f),'bOBny':'0.6','ikeeP':'.cc-revoke.cc-bottom','WCNJb':_0xdd725e(0x156)};const _0x549faa=document[_0xdd725e(0x13a)](_0x1dd7f7[_0xdd725e(0x155)]);if(_0x549faa){let _0x55b2d1=![];_0x549faa[_0xdd725e(0x13d)](_0x1dd7f7[_0xdd725e(0x151)],function(){var _0x5b96c4=_0xdd725e;_0x55b2d1=!_0x55b2d1,_0x549faa[_0x5b96c4(0x136)][_0x5b96c4(0x139)]=_0x55b2d1?'translateY(0)':_0x1dd7f7[_0x5b96c4(0x142)],_0x549faa['style'][_0x5b96c4(0x132)]=_0x55b2d1?'1':_0x1dd7f7['bOBny'];});}});function a11_0x552b(){var _0x48e5ee=['xeNsI','Deny\x20cookies','#f1d600','translateY(90%)','Sfwmr','WCNJb','393MZJWHy','20dwPzrN','iIvlp','ikeeP','click','Learn\x20more','srjyY','149064yBNSif','opacity','opt-in','hasConsented','/privacy-policy','style','initialise','3289932ApQSKr','transform','querySelector','VrcZi','3809292IeFnZo','addEventListener','log','10044089EaWpma','5clOZwC','12562SLYuLv','RMhdV','DOMContentLoaded','369364ukgIrg','qccDT','4186525bVRLXx','load','cqLRz','243SxqMQD','owyYC','✅\x20Cookies\x20allowed'];a11_0x552b=function(){return _0x48e5ee;};return a11_0x552b();}
+var $590ccd484fbcbae1$exports = {};
+window.addEventListener("load", function() {
+    window.cookieconsent.initialise({
+        type: "opt-in",
+        palette: {
+            popup: {
+                background: "#000"
+            },
+            button: {
+                background: "#f1d600"
+            }
+        },
+        theme: "classic",
+        content: {
+            message: "This website uses cookies to improve user experience.",
+            allow: "Allow cookies",
+            deny: "Deny cookies",
+            link: "Learn more",
+            href: "/privacy-policy" // replace with your privacy policy URL
+        },
+        onInitialise: function(status) {
+            if (this.hasConsented()) console.log("\u2705 Cookies allowed");
+            else console.log("\uD83D\uDEAB Cookies denied");
+        }
+    });
+});
+document.addEventListener("DOMContentLoaded", function() {
+    const revokeBtn = document.querySelector(".cc-revoke.cc-bottom");
+    if (revokeBtn) {
+        let isVisible = false;
+        revokeBtn.addEventListener("click", function() {
+            isVisible = !isVisible;
+            revokeBtn.style.transform = isVisible ? "translateY(0)" : "translateY(90%)";
+            revokeBtn.style.opacity = isVisible ? "1" : "0.6";
+        });
+    }
+});
+
+
