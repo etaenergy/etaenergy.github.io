@@ -328,10 +328,6 @@ img, video {
   z-index: -10;
 }
 
-.z-50 {
-  z-index: 50;
-}
-
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
@@ -458,10 +454,6 @@ img, video {
 
 .h-full {
   height: 100%;
-}
-
-.max-h-\[90vh\] {
-  max-height: 90vh;
 }
 
 .min-h-screen {
@@ -669,10 +661,6 @@ img, video {
 
 .place-self-center {
   place-self: center;
-}
-
-.overflow-y-auto {
-  overflow-y: auto;
 }
 
 .overflow-x-scroll {
@@ -1690,6 +1678,10 @@ body {
   width: 100rem;
 }
 
+.preloader_lottie1 {
+  width: 200rem;
+}
+
 .intro_image {
   transform-origin: 50% 100%;
   -o-object-fit: cover;
@@ -1749,6 +1741,10 @@ body {
 
   .preloader_lottie {
     width: 150rem;
+  }
+
+  .preloader_lottie1 {
+    width: 350rem;
   }
 
   .section_404 {
@@ -9192,6 +9188,11 @@ figcaption {
   padding: 5%;
 }
 
+.preloader_lottie1 {
+  width: 25rem;
+  padding: 5%;
+}
+
 .testimonial_face {
   border-radius: 50%;
   width: 100%;
@@ -10193,6 +10194,11 @@ figcaption {
 
   .preloader_lottie {
     width: 30rem;
+    padding: 20%;
+  }
+
+  .preloader_lottie1 {
+    width: 60rem;
     padding: 20%;
   }
 
@@ -14108,10 +14114,6 @@ button[type="button"]:hover {
     display: inline;
   }
 
-  .sm\:max-w-xl {
-    max-width: 36rem;
-  }
-
   .sm\:translate-x-0 {
     --tw-translate-x: 0px;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -14123,10 +14125,6 @@ button[type="button"]:hover {
 
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .sm\:p-4 {
-    padding: 1rem;
   }
 
   .sm\:py-32 {
@@ -14188,10 +14186,6 @@ button[type="button"]:hover {
     display: none;
   }
 
-  .md\:max-w-2xl {
-    max-width: 42rem;
-  }
-
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -14218,10 +14212,6 @@ button[type="button"]:hover {
 
   .lg\:block {
     display: block;
-  }
-
-  .lg\:max-w-3xl {
-    max-width: 48rem;
   }
 
   .lg\:max-w-none {
