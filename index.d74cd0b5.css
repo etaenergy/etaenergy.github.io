@@ -320,12 +320,24 @@ img, video {
   top: 1.5rem;
 }
 
+.bottom-4 {
+  bottom: 1rem;
+}
+
+.right-4 {
+  right: 1rem;
+}
+
 .isolate {
   isolation: isolate;
 }
 
 .-z-10 {
   z-index: -10;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .col-span-2 {
@@ -434,6 +446,16 @@ img, video {
 .size-full {
   width: 100%;
   height: 100%;
+}
+
+.size-10 {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.size-6 {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .h-0\.5 {
@@ -560,6 +582,22 @@ img, video {
 
 .animate-fade-slide-up {
   animation: 1s ease-out forwards fadeSlideUp;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    animation-timing-function: cubic-bezier(.8, 0, 1, 1);
+    transform: translateY(-25%);
+  }
+
+  50% {
+    animation-timing-function: cubic-bezier(0, 0, .2, 1);
+    transform: none;
+  }
+}
+
+.animate-bounce {
+  animation: 1s infinite bounce;
 }
 
 .resize {
@@ -773,6 +811,18 @@ img, video {
 
 .bg-opacity-95 {
   --tw-bg-opacity: .95;
+}
+
+.bg-opacity-75 {
+  --tw-bg-opacity: .75;
+}
+
+.bg-opacity-85 {
+  --tw-bg-opacity: .85;
+}
+
+.bg-opacity-65 {
+  --tw-bg-opacity: .65;
 }
 
 .bg-\[radial-gradient\(at_50\%_75\%\,_\#dc143c\,_\#a10e2a\,_\#5a0616\)\] {
@@ -1087,6 +1137,11 @@ img, video {
   color: #fffc;
 }
 
+.text-violet-500 {
+  --tw-text-opacity: 1;
+  color: rgb(139 92 246 / var(--tw-text-opacity, 1));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -1140,6 +1195,16 @@ img, video {
 
 .outline {
   outline-style: solid;
+}
+
+.ring-1 {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+.ring-gray-900\/5 {
+  --tw-ring-color: #1118270d;
 }
 
 .blur {
@@ -14240,5 +14305,15 @@ button[type="button"]:hover {
 @media (width >= 1280px) {
   .xl\:bg-\[conic-gradient\(from_180deg\,_\#ff6a6a\,_\#cc3333\,_\#660000\)\] {
     background-image: conic-gradient(from 180deg, #ff6a6a, #c33, #600);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark\:bg-white\/5 {
+    background-color: #ffffff0d;
+  }
+
+  .dark\:ring-white\/20 {
+    --tw-ring-color: #fff3;
   }
 }
